@@ -9,11 +9,11 @@ function Header() {
 
             <ul className="menu">
 
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#registro">Registro</a></li>
-                <li><a href="#busqueda">🔎</a></li>
-                <li><a href="#carrito">🛒</a></li>
+                <li><Link to="#inicio">Inicio</Link></li>
+                <li><Link to="#productos">Productos</Link></li>
+                <li><Link to="#registro">Registro</Link></li>
+                <li><Link to="#busqueda">🔎</Link></li>
+                <li><Link to="#carrito">🛒</Link></li>
 
                                         {/* <a className="menu__item">ABONO</a>
 <a className="menu__item">SUSTRATO</a>
