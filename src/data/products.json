@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Geranio 1",
+        "price": 10,
+        "imgUrl": "./images/geranio1.png"
+    },
+    {
+        "id": 2,
+        "name": "Geranio 2",
+        "price": 15,
+        "imgUrl": "./images/geranio2.png"
+    },
+    {
+        "id": 3,
+        "name": "Geranio 3",
+        "price": 20,
+        "imgUrl": "./images/geranio3.png"
+    },
+    {
+        "id": 4,
+        "name": "Geranio 4",
+        "price": 30,
+        "imgUrl": "./images/geranio4.png"
+    },
+    {
+        "id": 5,
+        "name": "Geranio 5",
+        "price": 35,
+        "imgUrl": "./images/geranio5.png"
+    },
+    {
+        "id": 6,
+        "name": "Geranio 6",
+        "price": 45,
+        "imgUrl": "./images/geranio6.png"
+    },
+    {
+        "id": 7,
+        "name": "Geranio 7",
+        "price": 55,
+        "imgUrl": "./images/geranio7.png"
+    },
+    {
+        "id": 8,
+        "name": "Abono",
+        "price": 25,
+        "imgUrl": "./images/abono.svg"
+    },
+    {
+        "id": 9,
+        "name": "Riego",
+        "price": 55,
+        "imgUrl": "./images/riego.svg"
+    },
+    {
+        "id": 10,
+        "name": "Sustrato",
+        "price": 35,
+        "imgUrl": "./images/sustrato.svg"
+    }
+]
