@@ -28,6 +28,29 @@
     font-family: 'Krona One', sans-serif;
     letter-spacing: 1px;
   }
-  .menu, .menu__btn{
+.menu__btn{
     display:none;
+}
+
+.menu nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+ .menu nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+ 
+ .barra .menu nav ul li a {
+    background-color: brown;
+    color: rgb(40, 17, 188);
+    text-decoration: none;
+  } 
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    align-items: right;
 }
