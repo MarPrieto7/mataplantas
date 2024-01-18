@@ -19,6 +19,7 @@ import '../Components/header/Header.css'
 // import Home from './page/Home';
 import '../page/Pagination.css'
 import '../page/ProductModal.css'
+import '../Components/principal/Principal.css'
 
 
 
