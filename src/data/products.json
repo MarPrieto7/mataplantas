@@ -5,7 +5,7 @@
         "price": 10,
         "category": "flor",
         "description": "",
-        "imgUrl": "./images/geranio1.jpg"
+        "imgUrl": "../images/geranio1.jpg"
     },
     {
         "id": 2,
