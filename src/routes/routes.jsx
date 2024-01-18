@@ -18,6 +18,7 @@ import '../Components/footer/Footer.css'
 import '../Components/header/Header.css'
 // import Home from './page/Home';
 import '../page/Pagination.css'
+import '../page/ProductModal.css'
 
 
 
