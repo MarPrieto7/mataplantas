@@ -32,6 +32,7 @@ function RoutesProject() {
                 <Route path='/Products' element={<Products/>} />
                 <Route path='/Register' element={<Register/>} />
                 <Route path='/Search' element={<Search/>} />
+                <Route path='/Wishlist' element={<Wishlist/>} />
             </Routes>
         <Footer />
     </BrowserRouter>
