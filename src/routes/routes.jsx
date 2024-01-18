@@ -4,7 +4,7 @@ import Footer from '../Components/footer/Footer'
 import Header from '../Components/header/Header'
 import Home from '../page/Home'
 import Cart from '../page/Cart'
-import Aboutus from '../page/Aboutus'
+// import Aboutus from '../page/Aboutus'
 import Contact from '../page/Contact'
 import Login from '../page/Login'
 import Products from '../page/Products'
@@ -17,14 +17,17 @@ import '../Components/footer/Footer.css'
 // import Header from './Components/header/Header'
 import '../Components/header/Header.css'
 // import Home from './page/Home';
+import '../page/Pagination.css'
+
 
 
 function RoutesProject() {
   return (
     <BrowserRouter>
+   
         <Header/>
             <Routes>
-                <Route path='/Aboutus' element={<Aboutus/>} />
+                {/* <Route path='/Aboutus' element={<Aboutus/>} /> */}
                 <Route path='/Cart' element={<Cart/>} />
                 <Route path='/Contact' element={<Contact/>} />
                 <Route path='/' element={<Home/>} />
@@ -34,6 +37,7 @@ function RoutesProject() {
                 <Route path='/Search' element={<Search/>} />
             </Routes>
         <Footer />
+  
     </BrowserRouter>
   )
 }

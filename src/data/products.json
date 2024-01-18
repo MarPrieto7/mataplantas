@@ -3,60 +3,103 @@
         "id": 1,
         "name": "Geranio 1",
         "price": 10,
-        "imgUrl": "./images/geranio1.png"
+        "category": "planta",
+        "imgUrl": "../images/geranio1.jpg"
     },
     {
         "id": 2,
         "name": "Geranio 2",
         "price": 15,
-        "imgUrl": "./images/geranio2.png"
+        "category": "planta",
+        "imgUrl": "../images/geranio2.jpg"
     },
     {
         "id": 3,
         "name": "Geranio 3",
         "price": 20,
-        "imgUrl": "./images/geranio3.png"
+        "category": "planta",
+        "imgUrl": "../images/geranio3.jpg"
     },
     {
         "id": 4,
         "name": "Geranio 4",
         "price": 30,
-        "imgUrl": "./images/geranio4.png"
+        "category": "planta",
+        "imgUrl": "../images/geranio4.jpg"
     },
     {
         "id": 5,
         "name": "Geranio 5",
         "price": 35,
-        "imgUrl": "./images/geranio5.png"
+        "category": "planta",
+        "imgUrl": "../images/geranio5.jpg"
     },
     {
         "id": 6,
         "name": "Geranio 6",
         "price": 45,
-        "imgUrl": "./images/geranio6.png"
+        "category": "planta",
+        "imgUrl": "../images/geranio6.jpg"
     },
     {
         "id": 7,
         "name": "Geranio 7",
         "price": 55,
-        "imgUrl": "./images/geranio7.png"
+        "category": "planta",
+        "imgUrl": "../images/geranio7.jpg"
     },
     {
         "id": 8,
         "name": "Abono",
         "price": 25,
-        "imgUrl": "./images/abono.svg"
+        "category": "abono",
+        "imgUrl": "../images/abono.svg"
     },
     {
         "id": 9,
         "name": "Riego",
         "price": 55,
+        "category": "riego",
         "imgUrl": "./images/riego.svg"
     },
     {
         "id": 10,
-        "name": "Sustrato",
+        "name": "Cactus",
         "price": 35,
-        "imgUrl": "./images/sustrato.svg"
+        "category": "sustrato",
+        "imgUrl": "../images/cactus.png"
+    },
+    {
+        "id": 11,
+        "name": "Bonsai",
+        "price": 35,
+        "category": "sustrato",
+        "imgUrl": "../images/bonsai.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Aloe Vera",
+        "price": 55,
+        "category": "riego",
+        "imgUrl": "../images/aloe.jpg"
+    }, {
+        "id": 13,
+        "name": "Calathea",
+        "price": 55,
+        "category": "riego",
+        "imgUrl": "../images/calathea.jpg"
+    }, {
+        "id": 14,
+        "name": "Tulipa",
+        "price": 55,
+        "category": "riego",
+        "imgUrl": "../images/tulipanes.png"
+    },
+    {
+        "id": 15,
+        "name": "Aeonium",
+        "price": 55,
+        "category": "riego",
+        "imgUrl": "../images/aeonium.jpg"
     }
 ]
