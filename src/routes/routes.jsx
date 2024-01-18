@@ -17,6 +17,8 @@ import '../Components/footer/Footer.css'
 // import Header from './Components/header/Header'
 import '../Components/header/Header.css'
 // import Home from './page/Home';
+import '../Components/principal/Principal.css'
+
 
 
 function RoutesProject() {
