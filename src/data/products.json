@@ -4,63 +4,63 @@
         "name": "Geranio 1",
         "price": 10,
         "category": "planta",
-        "imgUrl": "./images/geranio1.png"
+        "imgUrl": "../images/geranio1.jpg"
     },
     {
         "id": 2,
         "name": "Geranio 2",
         "price": 15,
         "category": "planta",
-        "imgUrl": "./images/geranio1.png"
+        "imgUrl": "../images/geranio2.jpg"
     },
     {
         "id": 3,
         "name": "Geranio 3",
         "price": 20,
         "category": "planta",
-        "imgUrl": "./images/geranio3.png"
+        "imgUrl": "../images/geranio3.jpg"
     },
     {
         "id": 4,
         "name": "Geranio 4",
         "price": 30,
         "category": "planta",
-        "imgUrl": "./images/geranio4.png"
+        "imgUrl": "../images/geranio4.jpg"
     },
     {
         "id": 5,
         "name": "Geranio 5",
         "price": 35,
         "category": "planta",
-        "imgUrl": "./images/geranio5.png"
+        "imgUrl": "./images/geranio5.jpg"
     },
     {
         "id": 6,
         "name": "Geranio 6",
         "price": 45,
         "category": "planta",
-        "imgUrl": "./images/geranio6.png"
+        "imgUrl": "../images/geranio6.jpg"
     },
     {
         "id": 7,
         "name": "Geranio 7",
         "price": 55,
         "category": "planta",
-        "imgUrl": "./images/geranio7.png"
+        "imgUrl": "../images/geranio7.jpg"
     },
     {
         "id": 8,
         "name": "Abono",
         "price": 25,
         "category": "abono",
-        "imgUrl": "./images/abono.svg"
+        "imgUrl": "../images/abono.svg"
     },
     {
         "id": 9,
         "name": "Riego",
         "price": 55,
         "category": "riego",
-        "imgUrl": "./images/riego.svg"
+        "imgUrl": "../images/riego.svg"
     },
     {
         "id": 10,
