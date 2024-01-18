@@ -1,20 +1,21 @@
 import React from "react";
-import { Link, BrowserRouter } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 function Header() {
     return (
         <BrowserRouter>
         <header className="header">
 
-            <nav className="barra">
-                <a href="#">mataplantas.com</a>
+        <nav className="barra">
+            <Link to="#">mataplantas.com</Link>
 
                 <ul className="menu">
 
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/products">Productos</Link></li>
-                    <li><Link to="#registro">Registro</Link></li>
-                    <li><Link to="#busqueda">🔎</Link></li>
-                    <li><Link to="#carrito">🛒</Link></li>
+                <li><Link to="/">Inicio</Link></li>
+                <li><Link to="/Products">Productos</Link></li>
+                <li><Link to="/Register">Registro</Link></li>
+                <li><Link to="/Search">🔎</Link></li>
+                <li><Link to="/Cart">🛒</Link></li>
 
                 </ul>
 
