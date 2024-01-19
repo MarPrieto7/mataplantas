@@ -1,33 +1,104 @@
+/* Header Styles */
 .header {
     position: relative;
     width: 100%;
-    width: 100%;
     margin: 0 auto;
-}
-.header .menu__icon {
-    display: block;
-} 
-.barra {
+  }
+  
+  .barra {
     background-color: #bf4f4e;
-    height: 30px;
+    height: 50px; /* Ajustado para mayor altura */
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-}
-.barra a {
+    padding: 0 20px; /* Añadido espaciado a los lados */
+  }
+  
+  .barra a {
     color: #fff;
     text-decoration: none;
     padding-left: 1%;
-}
-.lableIt {
+  }
+  
+  .lableIt {
     line-height: 20px;
     font-size: 0.8rem;
-    color:#2B2E4A;
+    color: #2B2E4A;
     font-family: 'Krona One', sans-serif;
     letter-spacing: 1px;
   }
-  .menu, .menu__btn{
-    display:none;
-}
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .menu nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu nav ul li {
+    margin-right: 10px;
+  }
+  
+  .barra .menu nav ul li a {
+    background-color: brown;
+    color: rgb(40, 17, 188);
+    text-decoration: none;
+  }
+  
+  .menu__btn {
+    display: none;
+  }
+  
+  /* Botón Toggle Modo Oscuro */
+  #toggleBtn {
+    background-color: transparent;
+    color: #bf4f4e;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-badge {
+    margin-top: -20px; /* Ajusta la cantidad según tus necesidades */
+  }
+  /* Estilo de los iconos SVG en el botón Toggle Modo Oscuro */
+  #toggleBtn .svg-icon {
+    margin-right: 5px;
+  }
+  
+  /* Ajustes de Responsive */
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px; /* Altura de la barra */
+      left: 0;
+      width: 100%;
+      background-color: #bf4f4e;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .menu__btn {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+
+  
