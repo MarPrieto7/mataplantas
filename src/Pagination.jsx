@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ProductModal from './ProductModal'; // Ajusta la ruta según la ubicación de tu componente
+import ProductModal from './ProductModal';
 import productsData from './data/products.json';
 
 const Pagination = () => {
-  const productsPerPage = 4;
+  const productsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -27,15 +27,18 @@ const Pagination = () => {
     setShowModal(false);
   };
 
+
   return (
     <section className="product-section">
-      <h1 className="section-title">Lista de Productos</h1>
+      <h1 className="section-title"> 
+                Puedes escoger a tu próxima víctima...
+          </h1>
       <ul className="product-list">
         {currentProducts.map((product) => (
           <li key={product.id} className="product-item" onClick={() => handleProductClick(product)}>
             <h3 className="product-name">{product.name}</h3>
             <img src={product.imgUrl} alt={product.name} className="product-image" />
-            <p className="product-price">Precio: {product.price}$</p>
+            <p className="product-price">{product.price}$</p>
           </li>
         ))}
       </ul>
@@ -49,7 +52,7 @@ const Pagination = () => {
           <i className="fa-solid fa-arrow-left"></i>
         </button>
 
-        <span className="pagination-info">Página {currentPage} de {totalPages}</span>
+        <span className="pagination-info">{currentPage} de {totalPages}</span>
 
         <button
           onClick={() => handlePageChange(currentPage + 1)}
