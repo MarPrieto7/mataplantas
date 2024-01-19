@@ -3,16 +3,16 @@ import React from 'react';
 // import InfoGeranio from '../components/InfoGeranio';
 // import Descuento from '../components/Descuento';
 // import Cruzada from '../components/Cruzada';
+import Principal from '../Components/principal/Principal';
 
 
 const Home = () => {
   return (
-    <div>
-      {/* <Hero />
-      <InfoGeranio />
-      <Descuento />
-      <Cruzada /> */}
-    </div>
+   
+            <Principal />
+
+      
+    
   );
 }
 
