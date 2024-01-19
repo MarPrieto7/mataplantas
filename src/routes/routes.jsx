@@ -17,7 +17,8 @@ import '../Components/footer/Footer.css'
 // import Header from './Components/header/Header'
 import '../Components/header/Header.css'
 // import Home from './page/Home';
-import '../Components/principal/Principal.css'
+import '../page/Pagination.css'
+import '../page/ProductModal.css'
 
 
 
@@ -35,7 +36,6 @@ function RoutesProject() {
                 <Route path='/Products' element={<Products/>} />
                 <Route path='/Register' element={<Register/>} />
                 <Route path='/Search' element={<Search/>} />
-                <Route path='/Wishlist' element={<Wishlist/>} />
             </Routes>
         <Footer />
   
