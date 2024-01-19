@@ -21,9 +21,9 @@
     border: 1px solid #ddd;
     border-radius: 15px;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     width: 200px;
-    height: 250px;
+    height: 280px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
@@ -74,4 +74,18 @@
     font-size: 16px;
     margin: 0 10px;
   }
-  
+  /* En tu archivo de estilos CSS (ajusta el nombre según tu archivo) */
+.add-to-cart-button {
+  background-color: #bf4f4e; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 13px; /* Tamaño de la fuente del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px; /* Añade esquinas redondeadas al botón */
+  margin-top: 10px; /* Espaciado superior del botón */
+}
+
+.add-to-cart-button:hover {
+  background-color: #953c3b; /* Cambia el color de fondo al pasar sobre el botón */
+}
