@@ -1,11 +1,17 @@
 
 .product-section {
   margin: 35px;
-  text-align: center;
+  text-align: center; 
+}
+
+.products {
+  display: flex;
+  gap: 5vh;
+margin: 40px;
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 40px;
   text-align: left;
   margin-bottom: 20px;
   font-weight: 300;
@@ -76,6 +82,7 @@
   text-align: center;
 }
 
+
 .pagination-button:hover {
   transform: scale(1.1);
 }
@@ -100,4 +107,30 @@
 
 .add-to-cart-button:hover {
   background-color: #953c3b; /* Cambia el color de fondo al pasar sobre el botón */
+}
+
+/* Switch dark */
+body.dark{
+  background-color: grey;
+}
+
+.product-item.dark{
+  box-shadow: 0 4px 10px #fff;
+}
+
+/* Category Filter */
+aside{
+  text-align: left;
+}
+
+aside h2 {
+  font-weight: 300;
+  font-size: 35px;
+}
+
+aside ul {
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+ 
 }

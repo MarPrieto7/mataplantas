@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "name": "Geranio 1",
+        "name": "Anemona",
         "price": 10,
         "category": "flor",
         "description": "",
-        "imgUrl": "./images/geranio1.jpg"
+        "imgUrl": "./images/anemona.jpg"
     },
     {
         "id": 2,
@@ -18,11 +18,11 @@
     },
     {
         "id": 3,
-        "name": "Geranio 3",
+        "name": "Lirio",
         "price": 20,
         "category": "flor",
         "description": "",
-        "imgUrl": "./images/geranio3.jpg"
+        "imgUrl": "./images/lirio.jpg"
         
     },
     {
@@ -36,11 +36,11 @@
     },
     {
         "id": 5,
-        "name": "Geranio 5",
+        "name": "Margarita",
         "price": 35,
         "category": "flor",
         "description": "",
-        "imgUrl": "./images/geranio5.jpg"
+        "imgUrl": "./images/margarita.jpg"
 
     },
     {
@@ -54,11 +54,11 @@
     },
     {
         "id": 7,
-        "name": "Geranio 7",
+        "name": "Buxus",
         "price": 55,
-        "category": "flor",
+        "category": "seto",
         "description": "",
-        "imgUrl": "./images/geranio7.jpg"
+        "imgUrl": "./images/buxus.png"
      
     },
     {
@@ -124,14 +124,6 @@
         "category": "cactus",
         "description": "Explora la fascinante belleza de la aeonium. Esta suculenta única presenta rosetas de hojas exuberantes y colores cautivadores. Perfecta para jardines de rocas o macetas, la aeonium añade un toque de drama y encanto a cualquier paisaje.",
         "imgUrl": "../images/aeonium.jpg"
-    }, 
-    {
-        "id": 15,
-        "name": "Pensamiento",
-        "price": 55,
-        "category": "flor",
-        "description": "Celebra la delicadeza y la simpatía con el pensamiento. Con sus flores multicolores y carácter encantador, esta planta anual es perfecta para jardines y macetas. Los pensamientos son símbolos encantadores de amistad y afecto, haciendo que cada espacio florezca con alegría y color.",
-        "imgUrl": "../images/pansy.jpg"
     }, 
     {
         "id": 15,
