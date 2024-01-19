@@ -132,13 +132,5 @@
         "category": "flor",
         "description": "Celebra la delicadeza y la simpatía con el pensamiento. Con sus flores multicolores y carácter encantador, esta planta anual es perfecta para jardines y macetas. Los pensamientos son símbolos encantadores de amistad y afecto, haciendo que cada espacio florezca con alegría y color.",
         "imgUrl": "../images/pansy.jpg"
-    }, 
-    {
-        "id": 15,
-        "name": "Pensamiento",
-        "price": 55,
-        "category": "flor",
-        "description": "Celebra la delicadeza y la simpatía con el pensamiento. Con sus flores multicolores y carácter encantador, esta planta anual es perfecta para jardines y macetas. Los pensamientos son símbolos encantadores de amistad y afecto, haciendo que cada espacio florezca con alegría y color.",
-        "imgUrl": "../images/pansy.jpg"
     }
 ]

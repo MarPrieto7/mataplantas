@@ -38,6 +38,7 @@ const Pagination = () => {
     alert(`¡${product.name} añadido al carrito!`);
   };
 
+
   return (
     <section className="product-section">
       <h1 className="section-title"> Puedes escoger a tu próxima víctima...</h1>
@@ -86,4 +87,6 @@ const Pagination = () => {
   );
 };
 
-export default Pagination;
+export default Pagination ;
+
+

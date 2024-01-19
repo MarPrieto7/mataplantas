@@ -18,6 +18,8 @@ function Header({ cartItemCount }) {
             <li><Link to="/Register">Registro</Link></li>
             <li><Link to="/Search">🔎</Link></li>
             <li><Link to="/Cart"><CartBadge itemCount={cartItemCount} /></Link></li>
+            <li><Link to="/Wishlist">❤</Link></li>
+            <p>0</p>
           </ul>
           <button id="toggleBtn" onClick={handleToggleMenu}>
             <svg className="svg-icon" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">

@@ -9,7 +9,7 @@ import Login from '../page/Login';
 import Products from '../page/Products';
 import Register from '../page/Register';
 import Search from '../page/Search';
-
+import { Wishlist } from '../Components/Wish/Wish';
 
 
 import '../App.css';
@@ -19,6 +19,7 @@ import '../page/Pagination.css';
 import '../page/ProductModal.css';
 import '../Components/principal/Principal.css';
 import '../page/Cart.css';
+
 
 function RoutesProject() {
   return (
@@ -33,6 +34,7 @@ function RoutesProject() {
           <Route path='/Products' element={<Products />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/Search' element={<Search />} />
+          <Route path='/Wishlist' element={<Wishlist />} />
         </Routes>
         <Footer />
     
