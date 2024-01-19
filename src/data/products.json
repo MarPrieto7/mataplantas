@@ -3,60 +3,126 @@
         "id": 1,
         "name": "Geranio 1",
         "price": 10,
-        "imgUrl": "./images/geranio1.png"
+        "category": "flor",
+        "description": "",
+        "imgUrl": "./images/geranio1.jpg"
     },
     {
         "id": 2,
         "name": "Geranio 2",
         "price": 15,
-        "imgUrl": "./images/geranio2.png"
+        "category": "flor",
+        "description": "",
+        "imgUrl": "./images/geranio2.jpg"
     },
     {
         "id": 3,
         "name": "Geranio 3",
         "price": 20,
-        "imgUrl": "./images/geranio3.png"
+        "category": "flor",
+        "description": "",
+        "imgUrl": "./images/geranio3.jpg"
     },
     {
         "id": 4,
         "name": "Geranio 4",
         "price": 30,
-        "imgUrl": "./images/geranio4.png"
+        "category": "flor",
+        "description": "",
+        "imgUrl": "./images/geranio4.jpg"
     },
     {
         "id": 5,
         "name": "Geranio 5",
         "price": 35,
-        "imgUrl": "./images/geranio5.png"
+        "category": "flor",
+        "description": "",
+        "imgUrl": "./images/geranio5.jpg"
     },
     {
         "id": 6,
         "name": "Geranio 6",
         "price": 45,
-        "imgUrl": "./images/geranio6.png"
+        "category": "flor",
+        "description": "",
+        "imgUrl": "./images/geranio6.jpg"
     },
     {
         "id": 7,
         "name": "Geranio 7",
         "price": 55,
-        "imgUrl": "./images/geranio7.png"
+        "category": "flor",
+        "description": "",
+        "imgUrl": "./images/geranio7.jpg"
     },
     {
         "id": 8,
-        "name": "Abono",
+        "name": "Cactus",
         "price": 25,
-        "imgUrl": "./images/abono.svg"
+        "category": "cactus",
+        "description": "Celebra la resistencia y la singularidad con nuestro cactus. Esta planta robusta y de bajo mantenimiento es ideal para aquellos que buscan un toque de desierto en su hogar. Con formas fascinantes y espinas intrincadas, el cactus aporta un toque moderno y audaz a cualquier entorno.",
+        "imgUrl": "../images/cactus2.jpg"
     },
     {
         "id": 9,
-        "name": "Riego",
+        "name": "Cactus",
         "price": 55,
-        "imgUrl": "./images/riego.svg"
+        "category": "cactus",
+        "description": "",
+        "imgUrl": "../images/cactus1.jpg"
     },
     {
         "id": 10,
-        "name": "Sustrato",
+        "name": "Cactus",
         "price": 35,
-        "imgUrl": "./images/sustrato.svg"
+        "category": "cactus",
+        "description": "",
+        "imgUrl": "../images/cactus.png"
+    },
+    {
+        "id": 11,
+        "name": "Bonsái",
+        "price": 35,
+        "category": "interior",
+        "description": "Experimenta la serenidad y la elegancia del bonsái. Esta obra maestra en miniatura captura la esencia de la naturaleza en un formato compacto. Cuida y da forma a tu bonsái para crear un vínculo único con esta representación artística de la belleza natural.",
+        "imgUrl": "../images/bonsai.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Aloe Vera",
+        "price": 55,
+        "category": "cactus",
+        "description": "Descubre los beneficios curativos y decorativos del aloe vera. Con sus hojas suculentas y propiedades calmantes, esta planta versátil es un tesoro en cualquier hogar. Agrega un toque de frescura y bienestar con el aloe vera, que no solo es hermoso sino también beneficioso para la piel.",
+        "imgUrl": "../images/aloe.jpg"
+    }, {
+        "id": 13,
+        "name": "Calathea",
+        "price": 55,
+        "category": "interior",
+        "description": "Sumérgete en el mundo de la elegancia tropical con la calathea. Sus hojas exquisitamente diseñadas, con patrones únicos, aportan un toque de exotismo a cualquier espacio. Ideal para aquellos que buscan una planta de interior llamativa y fácil de cuidar.",
+        "imgUrl": "../images/calathea.jpg"
+    }, {
+        "id": 14,
+        "name": "Tulipa",
+        "price": 55,
+        "category": "flor",
+        "description": "Sumérgete en la elegancia vibrante del tulipán. Con sus pétalos suaves y colores vibrantes, esta flor encantadora iluminará cualquier jardín o arreglo floral. Ideal para expresar amor y gratitud, el tulipán es la adición perfecta para resaltar la belleza natural.",
+        "imgUrl": "../images/tulipanes.png"
+    },
+    {
+        "id": 15,
+        "name": "Aeonium",
+        "price": 55,
+        "category": "cactus",
+        "description": "Explora la fascinante belleza de la aeonium. Esta suculenta única presenta rosetas de hojas exuberantes y colores cautivadores. Perfecta para jardines de rocas o macetas, la aeonium añade un toque de drama y encanto a cualquier paisaje.",
+        "imgUrl": "../images/aeonium.jpg"
+    }, 
+    {
+        "id": 15,
+        "name": "Pensamiento",
+        "price": 55,
+        "category": "flor",
+        "description": "Celebra la delicadeza y la simpatía con el pensamiento. Con sus flores multicolores y carácter encantador, esta planta anual es perfecta para jardines y macetas. Los pensamientos son símbolos encantadores de amistad y afecto, haciendo que cada espacio florezca con alegría y color.",
+        "imgUrl": "../images/pansy.jpg"
     }
 ]

@@ -24,4 +24,17 @@
 .hero img {
     max-width: 59%;
     margin-left: -178px;
-    height: auto;}
+    height: auto;
+}
+.slide {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 6%;
+}
+.slideGeranio{
+    width:40%;
+}
