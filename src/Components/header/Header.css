@@ -55,23 +55,11 @@
     display: none;
   }
   
-  /* Botón Toggle Modo Oscuro */
-  #toggleBtn {
-    background-color: transparent;
-    color: #bf4f4e;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
   
   .cart-badge {
     margin-top: -20px; /* Ajusta la cantidad según tus necesidades */
   }
-  /* Estilo de los iconos SVG en el botón Toggle Modo Oscuro */
-  #toggleBtn .svg-icon {
-    margin-right: 5px;
-  }
+
   
   /* Ajustes de Responsive */
   @media screen and (max-width: 768px) {
@@ -100,10 +88,7 @@
     }
   }
   
-
-  .switch {
-    margin-top: 2em;
-  }
+/* boton switch */
   
         .switch {
           background: #343d5b;

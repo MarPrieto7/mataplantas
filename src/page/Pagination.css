@@ -6,7 +6,8 @@
 
 .products {
   display: flex;
-  gap: 5vh;
+  justify-content: center;
+  gap: 20vh;
 margin: 40px;
 }
 
@@ -14,6 +15,7 @@ margin: 40px;
   font-size: 40px;
   text-align: left;
   margin-bottom: 20px;
+  margin-left: 50PX;
   font-weight: 300;
 }
 
@@ -23,6 +25,7 @@ margin: 40px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .product-item {
@@ -109,11 +112,6 @@ margin: 40px;
   background-color: #953c3b; /* Cambia el color de fondo al pasar sobre el botón */
 }
 
-/* Switch dark */
-body.dark{
-  background-color: grey;
-}
-
 .product-item.dark{
   box-shadow: 0 4px 10px #fff;
 }
@@ -136,3 +134,15 @@ body.dark{
   font-size: 20px;
  cursor: pointer;
 }
+
+
+/* Switch dark ///////////////////////////////////////////////////////////////////////*/
+body.dark{
+  background-color: rgb(77, 68, 68);
+}
+ 
+.social-icon__link.dark{
+  color: grey;
+  }
+
+ 

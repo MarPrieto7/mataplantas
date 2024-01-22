@@ -9,6 +9,7 @@ import Login from '../page/Login';
 import Products from '../page/Products';
 import Register from '../page/Register';
 import Search from '../page/Search';
+import AboutUs from '../page/Aboutus'
 
 
 
