@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 
 export const Registercomponent = (props) => {
     const [email, setEmail] = useState('');
