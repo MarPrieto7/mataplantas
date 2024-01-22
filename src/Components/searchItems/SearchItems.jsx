@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import itemsData from './products.json';
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../../context/CartContext';
 
 function SearchItems() {
   const [error, setError] = useState(null);
@@ -33,13 +33,13 @@ function SearchItems() {
     if (updateCartItemCount) {
       updateCartItemCount();
     }
-    alert(`${product.name} añadido al carrito!`);
+    // alert(`${product.name} añadido al carrito!`);
   };
 
   return (
     <div className="wrapper">
       <div>
-        <label htmlFor="search">Buscar:</label>
+        <label htmlFor="search">¿Qué artículo te gustaría encontrar?:</label>
         <input
           type="text"
           id="search"
