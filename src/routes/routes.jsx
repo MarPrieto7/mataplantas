@@ -9,7 +9,7 @@ import Login from '../page/Login';
 import Products from '../page/Products';
 import Register from '../page/Register';
 import Search from '../page/Search';
-
+import { Wishlist } from '../Components/Wish/Wish';
 
 
 
@@ -24,6 +24,7 @@ import '../Components/forms/Registercomponent.css'
 import '../Components/forms/Logincomponent.css'
 import '../../src/page/Contact.css'
 
+
 function RoutesProject() {
   return (
     <Router>
@@ -37,6 +38,7 @@ function RoutesProject() {
           <Route path='/Products' element={<Products />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/Search' element={<Search />} />
+          <Route path='/Wishlist' element={<Wishlist />} />
         </Routes>
         <Footer />
     
