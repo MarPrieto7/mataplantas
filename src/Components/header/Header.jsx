@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Link } from 'react-router-dom';
 import CartBadge from '../cart/CartBadge';
+import { CartContext } from "../../context/CartContext";
 
 function Header({ cartItemCount }) {
     const menuRef = useRef(null);
@@ -22,7 +23,8 @@ function Header({ cartItemCount }) {
                 <ul ref={menuRef} className="menu">
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/Products">Productos</Link></li>
-                    <li><Link to="/Register">Registro</Link></li>
+                    <li><Link to="/Login">Login</Link></li>
+                    <li><Link to="/Aboutus">Sobre Nosotros</Link></li>
                     <li><Link to="/Search">🔎</Link></li>
                     <li><Link to="/Cart"><CartBadge itemCount={cartItemCount} /></Link></li>
                 </ul>
