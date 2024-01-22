@@ -1,13 +1,24 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState } from "react";
 
-export const FavoriteContext = createContext(null)
+// Creando el contexto con un estado y función de actualización por defecto
+const FavoriteContext = createContext({
+    favoriteItems: [],
+    updateFavoriteItems: () => {}
+});
 
-export function FavoriteProvider({children}) {
+// Componente proveedor que encapsula la lógica del estado
+export const FavoriteProvider = ({ children }) => {
+    const [favoriteItems, setFavoriteItems] = useState([]);
 
-    const [Favorite, setFavorite] = useState([])
-  return (
-    <FavoriteContext.Provider value={[Favorite, setFavorite] }>
-        {children}
-    </FavoriteContext.Provider>
-  )
-}
+    const updateFavoriteItems = (newItems) => {
+        setFavoriteItems(newItems);
+    };
+
+    return (
+        <FavoriteContext.Provider value={{ favoriteItems, updateFavoriteItems }}>
+            {children}
+        </FavoriteContext.Provider>
+    );
+};
+
+export default FavoriteContext;
