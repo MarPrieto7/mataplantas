@@ -12,6 +12,7 @@ import Search from '../page/Search';
 
 
 
+
 import '../App.css';
 import '../Components/footer/Footer.css';
 import '../Components/header/Header.css';
@@ -21,6 +22,7 @@ import '../Components/principal/Principal.css';
 import '../page/Cart.css';
 import '../Components/forms/Registercomponent.css'
 import '../Components/forms/Logincomponent.css'
+import '../../src/page/Contact.css'
 
 function RoutesProject() {
   return (
