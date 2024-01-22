@@ -139,7 +139,8 @@
   display: flex;
   outline: none;
   right: 3em; 
-
+width:5rem;
+height: 1,8rem;
 }
 
 .switch::after {
