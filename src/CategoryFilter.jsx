@@ -9,15 +9,15 @@ const CategoryFilter = ({ categories, onCategoryChange }) => {
   };
 
   return (
-    <aside>
+    <aside className="category">
       <h2>Categorías</h2>
-      <p onClick={() => handleCategoryClick(null)}>Mostrar todos</p>
       <ul>
         {categories.map((category, index) => (
           <li key={index} onClick={() => handleCategoryClick(category)}>
-            {category}
+           <i class="fa-sharp fa-solid fa-play fa-2xs"></i> {category}
           </li>
-        ))}
+        ))}  
+         <p onClick={() => handleCategoryClick(null)}>Mostrar todos</p>
       </ul>
       
     </aside>

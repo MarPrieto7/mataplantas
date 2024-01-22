@@ -119,18 +119,20 @@ body.dark{
 }
 
 /* Category Filter */
-aside{
+.category{
   text-align: left;
 }
 
-aside h2 {
+.category h2 {
   font-weight: 300;
   font-size: 35px;
 }
-
-aside ul {
+.category p {
+  cursor: pointer;
+}
+.category ul {
   list-style: none;
   text-align: left;
   font-size: 20px;
- 
+ cursor: pointer;
 }

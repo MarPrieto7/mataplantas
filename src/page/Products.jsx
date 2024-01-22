@@ -53,7 +53,7 @@ const Pagination = () => {
 <section className="product-section">
       <h1 className="section-title"> Puedes escoger a tu próxima víctima...</h1>
 <section className='products'>
-      <CategoryFilter
+      <CategoryFilter 
         categories={getUniqueCategories(productsData)}
         onCategoryChange={handleCategoryChange}
       />
