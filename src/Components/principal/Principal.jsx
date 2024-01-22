@@ -27,7 +27,7 @@ function Principal() {
             </div>
           </article>
           <picture id="cambioSlide" className="slide">
-            <img src="images/geranio7.jpg" alt="geranio rojo" className="slideGeranio" />
+            <img src="../images/geranio9.png" alt="geranio rojo" className="slideGeranio" />
             {/* <img src="images/geranios8.jpg" alt="geranio blanco" className="slideGeranio" /> */}
             <p className="descripcionGeranio__p2 slideGeranio">
               Muchas especies aquí agrupadas, poseen fitotoxinas, lo cual hace que otras herbáceas encuentren dificultades en penetrar plantaciones ya establecidas de una especie determinada de este género. Por ello se las reconoce como confiables tapizantes.
