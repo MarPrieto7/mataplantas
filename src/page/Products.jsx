@@ -71,6 +71,7 @@ const Pagination = () => {
             <button className="add-to-cart-button" onClick={() => handleAddToCart(product)}>
               Agregar al carrito
             </button>
+            <button>💙</button>
           </li>
         ))}
       </ul>

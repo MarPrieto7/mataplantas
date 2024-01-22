@@ -3,15 +3,24 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+    
   }
+
+
   
   .barra {
     background-color: #bf4f4e;
-    height: 50px; /* Ajustado para mayor altura */
+    height: 7rem; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px; /* Añadido espaciado a los lados */
+  }
+
+  
+
+  .logoStyle{
+    width: 5rem;;
   }
   
   .barra a {
@@ -49,6 +58,7 @@
     background-color: brown;
     color: rgb(40, 17, 188);
     text-decoration: none;
+    
   }
   
   .menu__btn {
