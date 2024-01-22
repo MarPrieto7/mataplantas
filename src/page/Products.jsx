@@ -37,7 +37,7 @@ const Pagination = () => {
   };
 
   const handleAddToCart = (product) => {
-    addToCart({ ...product, quantity: (product.quantity || 0) + 1 });
+    addToCart({...product, quantity: (product.quantity || 0) + 1 });
     if (updateCartItemCount) {
       updateCartItemCount();
     }

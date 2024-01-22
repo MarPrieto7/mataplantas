@@ -31,6 +31,7 @@ function Header({ cartItemCount }) {
                     <li><Link to="/Aboutus">Sobre nosotros</Link></li>
                     <li><Link to="/Contact">Contacto</Link></li>
                     <li><Link to="/Search">🔎</Link></li>
+                    <li><Link to="/WishList">💙</Link></li>
                     <li><Link to="/Cart"><CartBadge itemCount={cartItemCount} /></Link></li>
                 </ul>
                 <button ref={btnSwitchRef} className="switch" id="switch" onClick={handleSwitchClick}>
