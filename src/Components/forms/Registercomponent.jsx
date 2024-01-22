@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-import React, { useRef, useState } from "react";
-=======
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
->>>>>>> ab19eb9c512c9667a564db94ab526fde68511bfe
 
 export const Registercomponent = (props) => {
   const [email, setEmail] = useState('');
