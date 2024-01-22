@@ -36,6 +36,7 @@ function RoutesProject() {
           <Route path='/' element={<Home />} />
           <Route path='/Login' element={<Login />} />
           <Route path='/Products' element={<Products />} />
+          <Route path='/Aboutus' element={<AboutUs />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/Search' element={<Search />} />
         </Routes>

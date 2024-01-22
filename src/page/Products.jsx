@@ -55,8 +55,7 @@ const Pagination = () => {
 <section className='products'>
       <CategoryFilter 
         categories={getUniqueCategories(productsData)}
-        onCategoryChange={handleCategoryChange}
-      />
+        onCategoryChange={handleCategoryChange}/>
 <section className='slider'>
   <ul className="product-list">
         {currentProducts.map((product) => (
