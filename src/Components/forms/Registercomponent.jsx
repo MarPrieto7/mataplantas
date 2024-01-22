@@ -11,7 +11,7 @@ export const Registercomponent = (props) => {
         console.log(email);
         setTimeout(() => {
             alert("Registrado con éxito");
-        }, 2000);
+        },);
     }
 
     return (
@@ -28,7 +28,6 @@ export const Registercomponent = (props) => {
 
                             <button type="submit">Aceptar</button>
                 </form>
-                            <button className="link-btn" onClick={() => props.onFormSwitch('login')}>¿Tienes cuenta?.Inicia sesión</button>
         </div>
     )
 }

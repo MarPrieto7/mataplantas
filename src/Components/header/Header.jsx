@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from 'react-router-dom';
-import CartBadge from '../cart/CartBadge';
+import CartBadge from '../cart/CartBadge'
 import { CartContext } from "../../context/CartContext";
 
 function Header({ cartItemCount }) {
@@ -19,7 +19,11 @@ function Header({ cartItemCount }) {
     return (
         <header className="header">
             <nav className="barra">
-                <Link to="#">mataplantas.com</Link>
+                <div className="logo">
+                <Link to="/"><img src="../images/logo.webp" alt="logo mataplanta"></img></Link>
+                   
+                </div>
+                
                 <ul ref={menuRef} className="menu">
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/Products">Productos</Link></li>
