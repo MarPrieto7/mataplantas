@@ -20,7 +20,7 @@ function Header({ cartItemCount }) {
         <header className="header">
             <nav className="barra">
                 <div className="logo">
-                <Link to="/"><img src="../images/logo.webp" alt="logo mataplanta"></img></Link>
+                <Link to="/"><img className="logoStyle" src="../images/logo.webp" alt="logo mataplanta"></img></Link>
                    
                 </div>
                 
