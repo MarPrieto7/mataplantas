@@ -28,7 +28,8 @@ function Header({ cartItemCount }) {
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/Products">Productos</Link></li>
                     <li><Link to="/Login">Login</Link></li>
-                    <li><Link to="/Aboutus">Sobre Nosotros</Link></li>
+                    <li><Link to="/Aboutus">Sobre nosotros</Link></li>
+                    <li><Link to="/Contact">Contacto</Link></li>
                     <li><Link to="/Search">🔎</Link></li>
                     <li><Link to="/Cart"><CartBadge itemCount={cartItemCount} /></Link></li>
                 </ul>
