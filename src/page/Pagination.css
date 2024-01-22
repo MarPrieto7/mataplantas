@@ -53,6 +53,8 @@ margin: 40px;
   margin: 5px;
   font-weight: 450;
   text-align: left;
+  display: flex;
+  justify-content: center;
 }
 
 .product-price {
