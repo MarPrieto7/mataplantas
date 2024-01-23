@@ -9,7 +9,7 @@ import Login from '../page/Login';
 import Products from '../page/Products';
 import Register from '../page/Register';
 import Search from '../page/Search';
-import { Wishlist } from '../Components/Wish/Wish';
+import FavoriteList from '../Components/Wish/Wish';
 
 
 
@@ -38,7 +38,7 @@ function RoutesProject() {
           <Route path='/Products' element={<Products />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/Search' element={<Search />} />
-          <Route path='/Wishlist' element={<Wishlist />} />
+          <Route path='/Wishlist' element={<FavoriteList />} />
         </Routes>
         <Footer />
     
