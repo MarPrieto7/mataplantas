@@ -3,7 +3,7 @@ import ProductModal from '../page/ProductModal';
 import CategoryFilter from '../CategoryFilter';
 import { CartContext } from '../context/CartContext';
 import productsData from '../data/products.json';
-import Card from '../Components/Card';
+import Card from '../Components/Card/Card';
 
 const Pagination = () => {
   const [currentPage, setCurrentPage] = useState(1);
