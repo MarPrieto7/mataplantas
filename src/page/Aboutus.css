@@ -1,0 +1,75 @@
+.about-us {
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 8vh;
+    padding: 20px;
+}
+
+.about-content {
+    margin-top: 20px;
+    
+}
+
+
+
+.about-us-tittle {
+    font-size: 50px;
+    font-weight: 1;
+    margin-left: 18v;
+}
+.welcome{
+    font-size: larger;
+    font-weight: 800;
+    text-align: center;
+    margin: 8vh;
+}
+
+.about-content div {
+    font-size: larger;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.team-section {
+    margin-top: 15vh;
+    font-size: larger;
+    margin-bottom: 8vh;
+    line-height: 1.3;
+}
+.team-section h2{
+    margin-left: 20vh;
+}
+
+.team-section p{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.carousel {
+   
+    display: block;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+  }
+ 
+
