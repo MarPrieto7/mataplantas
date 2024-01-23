@@ -26,7 +26,7 @@ function Header({ cartItemCount }) {
                 </div>
                 
                 <ul ref={menuRef} className="menu">
-                    <li><Link to="/">Inicio</Link></li>
+                   
                     <li><Link to="/Products">Productos</Link></li>
                     <li><Link to="/Login">Login</Link></li>
                     <li><Link to="/Aboutus">Sobre nosotros</Link></li>
@@ -35,10 +35,12 @@ function Header({ cartItemCount }) {
                     <li><Link to="/WishList">❤️ {favoriteItems.length}</Link></li>
                     <li><Link to="/Cart"><CartBadge itemCount={cartItemCount} /></Link></li>
                 </ul>
+                <div className="button-dark">
                 <button ref={btnSwitchRef} className="switch" id="switch" onClick={handleSwitchClick}>
                     <span><i className="fa-solid fa-sun"></i></span>
                     <span><i className="fa-solid fa-moon"></i></span>
                 </button>
+                </div>
                 <input className="menu__btn" type="checkbox" id="menu__btn" />
                 <label className="menu__icon" htmlFor="menu__btn" onClick={handleToggleMenu}><span className="navicon"></span></label>
             </nav>
