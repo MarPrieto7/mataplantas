@@ -1,0 +1,181 @@
+/* Header Styles */
+.header {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+
+
+  
+  .barra {
+    background-color: #bf4f4e;
+    height: 7rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Añadido espaciado a los lados */
+  }
+
+  
+
+  .logoStyle{
+    width: 5rem;;
+  }
+  
+  .barra a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 1%;
+  }
+  
+  .lableIt {
+    line-height: 20px;
+    font-size: 0.8rem;
+    color: #2B2E4A;
+    font-family: 'Krona One', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .menu nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu nav ul li {
+    margin-right: 10px;
+  }
+  
+  .barra .menu nav ul li a {
+    background-color: brown;
+    color: rgb(40, 17, 188);
+    text-decoration: none;
+    
+  }
+  
+  .menu__btn {
+    display: none;
+  }
+  
+  
+  .cart-badge {
+    position: relative;
+    margin-top:-20px;
+  }
+  
+  .cart-badge a {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-badge span.item-count {
+    position: absolute;
+    margin-top: -10px;
+    left: 20px;
+    
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 14px; /* Ajusta el tamaño del número según sea necesario */
+    color: white; /* Ajusta el color del texto según sea necesario */
+  }  
+
+  /* Estilo de los iconos SVG en el botón Toggle Modo Oscuro */
+  #toggleBtn .svg-icon {
+    margin-right: 5px;
+  }
+  
+  /* Ajustes de Responsive */
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px; /* Altura de la barra */
+      left: 0;
+      width: 100%;
+      background-color: #bf4f4e;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .menu__btn {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+/* boton switch */
+  
+.switch {
+  background: #343d5b;
+  border-radius: 100px;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  right: 3em; 
+  width: 60px;
+height: 20px;
+  
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+.switch.active {
+  background: orange;
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+} 
+
+.fa-sun {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+  .fa-moon{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+   
+         
+         
