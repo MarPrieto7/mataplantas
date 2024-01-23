@@ -1,9 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import FavoriteContext from '../context/FavoriteContext';
 
 const Card = ({ productData }) => {
-    // Utiliza el contexto de favoritos
     const { favoriteItems, updateFavoriteItems } = useContext(FavoriteContext);
+
+    // Estado para manejar el ícono del corazón
+    const [heartIcon, setHeartIcon] = useState("🖤");
+
+    // Actualizar el ícono del corazón basado en si el producto está en favoritos
+    useEffect(() => {
+        const isFavorite = favoriteItems.includes(productData);
+        setHeartIcon(isFavorite ? "❤️" : "🖤");
+    }, [favoriteItems, productData]);
 
     const handleAddToFavorites = () => {
         // Verifica si el item ya está en favoritos
@@ -19,7 +27,7 @@ const Card = ({ productData }) => {
 
     return (
         <div>
-            <button onClick={handleAddToFavorites}>💙</button>
+            <button onClick={handleAddToFavorites}>{heartIcon}</button>
         </div>
     );
 };
