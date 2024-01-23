@@ -10,7 +10,6 @@ const Logincomponent = (props) => {
     e.preventDefault();
     console.log(email);
 
-    // Realiza alguna lógica de autenticación si es necesario
 
     // Después de la autenticación exitosa, redirige a la página de inicio
     navigate("/");
