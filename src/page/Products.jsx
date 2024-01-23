@@ -3,7 +3,7 @@ import ProductModal from '../page/ProductModal';
 import CategoryFilter from '../CategoryFilter';
 import { CartContext } from '../context/CartContext';
 import productsData from '../data/products.json';
-import Card from '../Components/Card';
+import Card from '../Components/Card/Card';
 
 const Pagination = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -106,9 +106,23 @@ const Pagination = () => {
           )}
         </section>
 
-      </section>
-      <div><p>¿Tienes una planta en apuros, triste y desanimada? ¡No te preocupes, amigo! En Matoplantas.com te ofrecemos un descuento especial si nos traes tu planta que parece más un zombie que una belleza verde. No importa si está marchita, despeinada o con una crisis de identidad, ¡aquí la resucitaremos y la convertiremos en una diva del jardín!</p>
-      </div>
+</section >
+<section className='discount'>
+  <div><p>
+        ¿Tienes una planta en apuros, triste y desanimada?
+        </p>
+      <p> 
+        ¡No te preocupes, amigo! En Matoplantas.com te ofrecemos un descuento especial si nos traes tu planta que parece más un zombie que una belleza verde.</p>
+        <p>
+           No importa si está marchita, despeinada o con una crisis de identidad, aquí la recuperaremos...
+      </p>
+      <p>
+        ¡A qué esperas para coger tu descuento!
+      </p>
+</div>
+<div><button class="btn">50% dsct</button></div>
+</section>
+      
     </section>
   );
 };

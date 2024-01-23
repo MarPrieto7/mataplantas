@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import FavoriteContext from '../context/FavoriteContext';
+import FavoriteContext from '../../context/FavoriteContext';
 
 const Card = ({ productData }) => {
     const { favoriteItems, updateFavoriteItems } = useContext(FavoriteContext);
