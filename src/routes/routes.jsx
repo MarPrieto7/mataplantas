@@ -25,6 +25,7 @@ import '../page/Cart.css';
 import '../Components/forms/Registercomponent.css'
 import '../Components/forms/Logincomponent.css'
 import '../../src/page/Contact.css'
+import '../page/Aboutus.css'
 
 
 function RoutesProject() {
