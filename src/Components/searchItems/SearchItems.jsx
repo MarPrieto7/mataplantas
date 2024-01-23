@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import itemsData from './products.json';
+import { CartContext } from '../../context/CartContext';
 
 function SearchItems() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const { addToCart, updateCartItemCount } = useContext(CartContext);
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
 
-  console.log(itemsData)
-
   const handleSearch = () => {
-    // Filtrar los elementos que coincidan con el término de búsqueda
     const filteredItems = itemsData.filter(item =>
       item.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -24,16 +23,23 @@ function SearchItems() {
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
 
-    // Si el término de búsqueda está vacío, mostrar todos los productos
     if (event.target.value === '') {
       setItems(itemsData);
     }
   };
 
+  const handleAddToCart = (product) => {
+    addToCart({ ...product, quantity: (product.quantity || 0) + 1 });
+    if (updateCartItemCount) {
+      updateCartItemCount();
+    }
+    // alert(`${product.name} añadido al carrito!`);
+  };
+
   return (
     <div className="wrapper">
       <div>
-        <label htmlFor="search">Buscar:</label>
+        <label htmlFor="search">¿Qué artículo te gustaría encontrar?:</label>
         <input
           type="text"
           id="search"
@@ -64,6 +70,7 @@ function SearchItems() {
                       Descripcion: <span>{item.description}</span>
                     </li>
                   </ol>
+                  <button onClick={() => handleAddToCart(item)}>Añadir al carrito</button>
                 </div>
               </article>
             </li>
@@ -75,4 +82,3 @@ function SearchItems() {
 }
 
 export default SearchItems;
-
