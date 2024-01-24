@@ -1,4 +1,4 @@
-  .product-item {
+  .product-item-search {
     background: white;
     padding: 20px;
     width: 100vh;
@@ -7,13 +7,13 @@
     display: flex;
   }
 
-  .product-item img {
+  .product-item-search img {
     max-height: 60vh; 
     margin-right: 30px; 
     border-radius: 8px;
   }
 
-  .card-content {
+  .card-content-search {
     text-align: left;
     font-weight: 400;
     display: flex;
@@ -40,5 +40,17 @@
   }
 
   .add-to-cart-button1:hover {
-    background-color: #953c3b; / Cambia el color de fondo al pasar sobre el botón */
+    background-color: #953c3b; 
   }
+
+  .card-list{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .product-list-search {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;}

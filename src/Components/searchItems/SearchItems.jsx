@@ -49,35 +49,39 @@ function SearchItems() {
         <button onClick={handleSearch}>Buscar</button>
       </div>
 
+
+      {/* <div className="product-section"> */}
       {isLoaded && (
-        <ul className="card-grid">
+        <ul className="product-list-search">
           {items.map((item) => (
-            <li key={item.id}>
-              <article className="card">
-                <div className="card-image">
-                  <img src={item.imgUrl} alt={item.name} />
-                </div>
-                <div className="card-content">
-                  <h2 className="card-name">{item.name}</h2>
+            <li className="product-item-search" key={item.id}>
+             
+                
+                  <img src={item.imgUrl} alt={item.name} className="product-image"/>
+                
+                <div className="card-content-search">
+                  <h2  className="product-name">{item.name}</h2>
                   <ol className="card-list">
                     <li>
-                      Precio: <span>{item.price}</span>
+                      Precio: <span className="cart-item-price">{item.price}</span>
                     </li>
                     <li>
                       Categoria: <span>{item.category}</span>
                     </li>
-                    <li>
+                    {/* <li>
                       Descripcion: <span>{item.description}</span>
-                    </li>
+                    </li> */}
                   </ol>
                   <button onClick={() => handleAddToCart(item)}>Añadir al carrito</button>
                 </div>
-              </article>
+              
             </li>
           ))}
         </ul>
+        
       )}
     </div>
+    // </div>
   );
 }
 

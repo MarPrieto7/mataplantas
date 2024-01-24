@@ -80,3 +80,8 @@ div.active {
   height: 15px;
   border-radius: 50%;
 }
+
+.size-img{
+  height: auto;
+  width: auto;
+}

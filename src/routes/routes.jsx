@@ -24,6 +24,7 @@ import '../Components/forms/Registercomponent.css'
 import '../Components/forms/Logincomponent.css'
 import '../../src/page/Contact.css'
 import '../Components/principal/Slider.css'
+import '../Components/searchItems/SearchItems.css'
 
 
 function RoutesProject() {
