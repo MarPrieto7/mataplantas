@@ -40,5 +40,9 @@
   }
 
   .add-to-cart-button1:hover {
-    background-color: #953c3b; / Cambia el color de fondo al pasar sobre el botón */
+    background-color: #953c3b; 
+  }
+
+  .probando{
+    min-height: calc(100vh - 100px);
   }

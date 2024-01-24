@@ -2,6 +2,7 @@
 .product-section {
   margin: 35px;
   text-align: center; 
+  min-height: calc(100vh - 100px);
 }
 
 .products {
@@ -203,4 +204,8 @@ body.dark{
   background: transparent;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.probando{
+  min-height: calc(100vh - 100px);
 }

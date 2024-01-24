@@ -9,6 +9,7 @@
     position: relative;
     bottom: 0;
 }
+
 .hojaFooter {
     display: flex;
     flex-direction: row;

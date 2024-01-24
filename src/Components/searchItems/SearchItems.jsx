@@ -37,7 +37,7 @@ function SearchItems() {
   };
 
   return (
-    <div className="wrapper">
+    <div className="probando">
       <div>
         <label htmlFor="search">¿Qué artículo te gustaría encontrar?:</label>
         <input
