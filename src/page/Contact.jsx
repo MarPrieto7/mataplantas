@@ -26,7 +26,7 @@ const ContactForm = () => {
   return (
     <div className="contact-form-container">
       <form className="contact-form" onSubmit={handleSubmit}>
-        <h4>Dudas o incidencias. Contáctanos</h4>
+        <h4>CONTACTA<br></br>con nuestros expertos en clorofila</h4>
         <InputField
           label="Nombre"
           type="text"
@@ -49,7 +49,7 @@ const ContactForm = () => {
           onChange={setEmail}
         />
         <TextAreaField label="Nota" id="note" value={note} onChange={setNote} />
-        <button type="submit">Enviar</button>
+        <button className="button-contact" type="submit">Enviar</button>
       </form>
     </div>
   );

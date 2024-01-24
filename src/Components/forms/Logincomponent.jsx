@@ -23,7 +23,7 @@ const Logincomponent = (props) => {
         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" required />
         <label htmlFor="password">Contraseña</label>
         <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" minLength="8" required/>
-        <button type="submit">Aceptar</button>
+        <button className="button-login" type="submit">Aceptar</button>
       </form>
       <button className="link-btn" onClick={() => props.onFormSwitch('Registercomponent')}>¿No tienes cuenta?. Regístrate </button>
     </div>

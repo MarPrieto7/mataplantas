@@ -48,7 +48,7 @@ export const Registercomponent = (props) => {
             onChange={onChange}
           />
         </div>
-        <button type="submit">Aceptar</button>
+        <button className="button-register" type="submit">Aceptar</button>
       </form>
     </div>
   );
