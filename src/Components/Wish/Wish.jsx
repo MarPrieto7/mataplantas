@@ -22,7 +22,7 @@ const FavoriteList = () => {
                             <img src={item.imgUrl} alt={item.name} className="product-image" />
                             <p className="product-name">{item.name}</p>
                             <p className="cart-item-price">Precio: {item.price}€</p>
-                            <button onClick={() => {removeFavorite(item)}}>Quitar de favoritos</button>
+                            <button className="add-to-cart-button" onClick={() => {removeFavorite(item)}}>Quitar de favoritos</button>
                         </div>
                     </li>
                 ))}

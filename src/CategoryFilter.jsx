@@ -14,11 +14,11 @@ const CategoryFilter = ({ categories, onCategoryChange }) => {
       <h2>Categorías</h2>
       <ul>
         {categories.map((category, index) => (
-          <li key={index} onClick={() => handleCategoryClick(category)}>
+          <li className="add-to-cart-button" key={index} onClick={() => handleCategoryClick(category)}>
             {category}
           </li>
         ))}  
-         <p onClick={() => handleCategoryClick(null)}>Mostrar todos</p>
+         <p className="add-to-cart-button" onClick={() => handleCategoryClick(null)}>Mostrar todos</p>
       </ul>
       
     </aside>
