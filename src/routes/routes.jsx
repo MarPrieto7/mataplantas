@@ -22,9 +22,9 @@ import '../page/Pagination.css';
 import '../page/ProductModal.css';
 import '../Components/principal/Principal.css';
 import '../page/Cart.css';
-import '../Components/forms/Registercomponent.css'
-import '../Components/forms/Logincomponent.css'
-import '../../src/page/Contact.css'
+// import '../Components/forms/Registercomponent.css'
+// import '../Components/forms/Logincomponent.css'
+// import '../../src/page/Contact.css'
 import '../Components/principal/Slider.css'
 import '../page/Aboutus.css'
 
