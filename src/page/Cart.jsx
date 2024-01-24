@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
   const { cartItems, getCartTotal, clearCart, updateItemQuantity, removeItem } = useContext(CartContext);
+  const navigate = useNavigate();
 
   const handleClearCart = () => {
     clearCart();
@@ -11,21 +13,21 @@ const Cart = () => {
   const handleCheckout = () => {
     alert('¡Gracias por tu compra!');
     clearCart();
+    // Redirige a la página de inicio después de la alerta
+    navigate('/');
   };
 
   const handleUpdateQuantity = (itemId, amount) => {
     updateItemQuantity(itemId, amount);
   };
 
-
-   const handleRemoveItem = (itemId) => {
-    
+  const handleRemoveItem = (itemId) => {
     removeItem(itemId);
   };
 
   return (
     <div className="cart-section">
-      <h1 className="section-title">Carrito de Compras</h1>
+      <h1 className="section-title-cart">Resumen de Compra</h1>
       {cartItems.length === 0 ? (
         <p>No hay productos en el carrito.</p>
       ) : (
@@ -40,19 +42,19 @@ const Cart = () => {
                   <p className="cart-item-total">Total: {item.price * item.quantity}€</p>
                 </div>
                 <div className="cart-item-actions">
-                <button className="boton-small-pos" onClick={() => handleUpdateQuantity(item.id, 1)}>
-                  +
-                </button>
-                <button className="boton-small-neg" onClick={() => handleRemoveItem(item.id)}>
-                  -
-                </button>
+                  <button className="boton-small-pos" onClick={() => handleUpdateQuantity(item.id, 1)}>
+                    +
+                  </button>
+                  <button className="boton-small-neg" onClick={() => handleRemoveItem(item.id)}>
+                    -
+                  </button>
                 </div>
               </li>
             ))}
           </ul>
           <div className="cart-summary">
             <p>Total del Carrito: {getCartTotal()}€</p>
-          </div>
+            </div>
           <div className="cart-actions">
             <button onClick={handleClearCart}>Vaciar Carrito</button>
             <button className="button button-primary checkout-button" onClick={handleCheckout}>
@@ -62,7 +64,7 @@ const Cart = () => {
         </>
       )}
       <div className="cart-actions">
-        <button onClick={() => window.location.href = '/'}>Volver a la Página de Inicio</button>
+        <button onClick={() => navigate('/')}>Volver a Inicio</button>
       </div>
     </div>
   );

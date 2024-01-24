@@ -1,112 +1,136 @@
 /* Agrega estos estilos a tu archivo CSS o componente de estilos */
 
 .cart-section {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    border-radius: 8px;
-    height: 80vh;
-  }
-  
-  .cart-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-  }
-  
-  .cart-item-name {
-    font-weight: bold;
-  }
-  
-  .cart-item-quantity,
-  .cart-item-price,
-  .cart-item-total {
-    font-size: 14px;
-  }
-  
-  .cart-item-actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .cart-summary {
-    margin-top: 20px;
-  }
-  
-  .cart-actions {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Márgen superior entre los botones y el contenido del carrito */
-  }
-  
-  .cart-actions button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  
-  .cart-actions button {
-    margin: 0 10px; /* Espaciado entre botones */
-  }
-  
-  /* Estilo para el botón de "Vaciar Carrito" */
-  .cart-actions button:first-child {
-    background-color: #bf4f4e; /* Color del botón */
-    color: #fff; /* Color del texto del botón */
-  }
-  
-  /* Estilo para el botón de "Pagar" */
-  .cart-actions button.button-primary.checkout-button {
-    background-color: #2e8b57; /* Color del botón de pagar */
-    color: #fff; /* Color del texto del botón de pagar */
-  }
-  
-  /* Estilo para el botón de "Volver a la Página de Inicio" */
-  .cart-actions button:last-child {
-    background-color: #3498db; /* Color del botón */
-    color: #fff; /* Color del texto del botón */
-  }
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  height: auto;
+  line-height: 1.5;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item-name {
+  font-weight: bold;
+}
+
+.cart-item-quantity,
+.cart-item-price,
+.cart-item-total {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 10px;
+}
+.section-title-cart {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom:1rem;
+}
+
+.cart-summary {
+  margin-top: 20px;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Márgen superior entre los botones y el contenido del carrito */
+}
+
+.cart-actions button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.cart-actions button {
+  margin: 0 10px; /* Espaciado entre botones */
+}
+
+/* Estilo para el botón de "Vaciar Carrito" */
+.cart-actions button:first-child {
+  background-color: #bf4f4e; /* Color del botón */
+  color: #fff; /* Color del texto del botón */
+  font-size: medium;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Estilo para el botón de "Pagar" */
+.cart-actions button.button-primary.checkout-button {
+  border: #ABC07F solid 0.15em;
+  background-color: #ABC07F;
+  transition: border 300ms, color 300ms, transform 0.3s;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(2, 44, 28);
+  position: relative;
+  overflow: hidden;
+  font-size: medium;
+  font-weight: 800;
+}
+
+/* Estilo para el botón de "Volver a la Página de Inicio" */
+.cart-actions button:last-child {
+  background-color: #3498db; /* Color del botón */
+  color: #fff; /* Color del texto del botón */
+  font-size: medium;
+  border-radius: 10px;
+  padding: 20px;
+}
 
 /* Estilos para botón de incrementar */
 .boton-small-pos {
-  background-color: #ABC07F;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  margin-right: 5px;
-  cursor: pointer;
+background-color: #ABC07F;
+color: #fff;
+border: none;
+padding: 8px 12px;
+margin-right: 5px;
+margin-left:1rem;
+cursor: pointer;
 }
 
 /* Estilos para botón de disminuir */
 .boton-small-neg {
-  background-color: #bf4f4e;;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
+background-color: #bf4f4e;;
+color: #fff;
+border: none;
+padding: 8px 12px;
+cursor: pointer;
 }
 
 
-  @media (max-width: 590px) {
-    .cart-item {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+
+@media (max-width: 590px) {
   
-    .cart-item-actions {
-      margin-top: 10px;
-    }
-  }
-  
+
+ 
+  .cart-section {
+    max-width: 230px;
+}
+}
