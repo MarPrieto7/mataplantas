@@ -27,6 +27,7 @@ import '../Components/forms/Logincomponent.css'
 import '../../src/page/Contact.css'
 import '../Components/principal/Slider.css'
 import '../page/Aboutus.css'
+import '../Components/searchItems/SearchItems.css'
 
 
 function RoutesProject() {

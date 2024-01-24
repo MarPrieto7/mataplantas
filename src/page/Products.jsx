@@ -13,7 +13,7 @@ const Pagination = () => {
 
   const { addToCart, updateCartItemCount } = useContext(CartContext);
 
-  const productsPerPage = 3;
+  const productsPerPage = 4;
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 

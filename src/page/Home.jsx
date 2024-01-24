@@ -4,16 +4,11 @@ import React from 'react';
 // import Descuento from '../components/Descuento';
 // import Cruzada from '../components/Cruzada';
 import Principal from '../Components/principal/Principal';
-import Slider, { SliderComponent } from  '../Components/principal/Slider'
 
 
 const Home = () => {
   return (
-   
-            <><Principal /><SliderComponent /></>
-
-      
-    
+            <Principal />
   );
 }
 

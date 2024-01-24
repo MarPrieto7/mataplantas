@@ -8,9 +8,9 @@ li {
   display: inline;
 }
 
-img {
+/* img {
   margin-top: -16px;
-}
+} */
 
 /* Main container */
 
@@ -79,4 +79,9 @@ div.active {
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+
+.size-img{
+  height: auto;
+  width: auto;
 }

@@ -2,13 +2,15 @@
 .product-section {
   margin: 35px;
   text-align: center; 
+  min-height: calc(100vh - 100px);
 }
 
 .products {
   display: flex;
   justify-content: center;
-  gap: 20vh;
-margin: 40px;
+  gap: 10vh;
+  margin: 40px;
+  flex-direction: column;
 }
 
 .section-title {
@@ -63,6 +65,8 @@ margin: 40px;
   font-size: 20px;
   font-weight: 700;
   text-align:left;
+  display: flex;
+  justify-content: center;
 }
 
 .pagination {
@@ -101,12 +105,10 @@ margin: 40px;
   color: #fff; /* Color del texto del botón */
   padding: 10px 20px; /* Espaciado interno del botón */
   font-size: 13px;
-  font-weight: 300; /* Tamaño de la fuente del botón */
   border: none; /* Elimina el borde del botón */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   border-radius: 5px; /* Añade esquinas redondeadas al botón */
-  margin-top: 10px; /* Espaciado superior del botón */
- display: flex;
+  margin-top: 5px; /* Espaciado superior del botón */
 }
 
 .add-to-cart-button:hover {
@@ -133,7 +135,11 @@ margin: 40px;
   list-style: none;
   text-align: left;
   font-size: 20px;
- cursor: pointer;
+  cursor: pointer;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  padding-left: 30px;
 }
 
 
@@ -192,4 +198,14 @@ margin: 40px;
 body.dark{
   background-color: rgb(77, 68, 68);
 }
- 
+
+.Corazon{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.probando{
+  min-height: calc(100vh - 100px);
+}

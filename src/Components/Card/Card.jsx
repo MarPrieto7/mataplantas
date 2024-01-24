@@ -27,7 +27,7 @@ const Card = ({ productData }) => {
 
     return (
         <div>
-            <button onClick={handleAddToFavorites}>{heartIcon}</button>
+            <button className='Corazon' onClick={handleAddToFavorites}>{heartIcon}</button>
         </div>
     );
 };
