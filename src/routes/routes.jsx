@@ -9,7 +9,9 @@ import Login from '../page/Login';
 import Products from '../page/Products';
 import Register from '../page/Register';
 import Search from '../page/Search';
-import { Wishlist } from '../Components/Wish/Wish';
+import FavoriteList from '../Components/Wish/Wish';
+import AboutUs from '../page/Aboutus'
+
 
 
 
@@ -20,10 +22,11 @@ import '../page/Pagination.css';
 import '../page/ProductModal.css';
 import '../Components/principal/Principal.css';
 import '../page/Cart.css';
-import '../Components/forms/Registercomponent.css'
-import '../Components/forms/Logincomponent.css'
-import '../../src/page/Contact.css'
+// import '../Components/forms/Registercomponent.css'
+// import '../Components/forms/Logincomponent.css'
+// import '../../src/page/Contact.css'
 import '../Components/principal/Slider.css'
+import '../page/Aboutus.css'
 import '../Components/searchItems/SearchItems.css'
 
 
@@ -38,9 +41,10 @@ function RoutesProject() {
           <Route path='/' element={<Home />} />
           <Route path='/Login' element={<Login />} />
           <Route path='/Products' element={<Products />} />
+          <Route path='/Aboutus' element={<AboutUs />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/Search' element={<Search />} />
-          <Route path='/Wishlist' element={<Wishlist />} />
+          <Route path='/Wishlist' element={<FavoriteList />} />
         </Routes>
         <Footer />
     

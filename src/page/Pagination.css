@@ -6,14 +6,17 @@
 
 .products {
   display: flex;
-  gap: 5vh;
-margin: 40px;
+  justify-content: center;
+  gap: 10vh;
+  margin: 40px;
+  flex-direction: column;
 }
 
 .section-title {
   font-size: 40px;
   text-align: left;
   margin-bottom: 20px;
+  margin-left: 50PX;
   font-weight: 300;
 }
 
@@ -23,6 +26,7 @@ margin: 40px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .product-item {
@@ -31,7 +35,6 @@ margin: 40px;
   margin: 10px;
   padding: 10px;
   width: 200px;
-  height: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -53,12 +56,16 @@ margin: 40px;
   margin: 5px;
   font-weight: 450;
   text-align: left;
+  display: flex;
+  justify-content: center;
 }
 
 .product-price {
   font-size: 20px;
   font-weight: 700;
   text-align:left;
+  display: flex;
+  justify-content: center;
 }
 
 .pagination {
@@ -97,21 +104,14 @@ margin: 40px;
   color: #fff; /* Color del texto del botón */
   padding: 10px 20px; /* Espaciado interno del botón */
   font-size: 13px;
-  font-weight: 300; /* Tamaño de la fuente del botón */
   border: none; /* Elimina el borde del botón */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   border-radius: 5px; /* Añade esquinas redondeadas al botón */
-  margin-top: 10px; /* Espaciado superior del botón */
- display: flex;
+  margin-top: 5px; /* Espaciado superior del botón */
 }
 
 .add-to-cart-button:hover {
   background-color: #953c3b; /* Cambia el color de fondo al pasar sobre el botón */
-}
-
-/* Switch dark */
-body.dark{
-  background-color: grey;
 }
 
 .product-item.dark{
@@ -134,5 +134,73 @@ body.dark{
   list-style: none;
   text-align: left;
   font-size: 20px;
- cursor: pointer;
+  cursor: pointer;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  padding-left: 30px;
+}
+
+
+.discount{
+  display: flex;
+  margin-top: 15vh;
+}
+.btn {
+  --color1: #1a8516;
+  --color2: #236b19;
+  perspective: 1000px;
+  padding: 1em 1em;
+  background: linear-gradient(var(--color1), var(--color2));
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 0 10px 10px #000;
+  cursor: pointer;
+  transform: rotateX(70deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.btn::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: var(--color2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+
+.btn::after {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background-color: var(--color1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+
+.btn:hover {
+  transform: rotateX(30deg) rotateZ(0);
+}
+
+ /* Switch dark ///////////////////////////////////////////////////////////////////////*/
+body.dark{
+  background-color: rgb(77, 68, 68);
+}
+
+.Corazon{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-top: 10px;
 }

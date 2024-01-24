@@ -1,11 +1,12 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { Link } from 'react-router-dom';
 import CartBadge from '../cart/CartBadge'
-import { CartContext } from "../../context/CartContext";
+import FavoriteContext from "../../context/FavoriteContext";
 
 function Header({ cartItemCount }) {
     const menuRef = useRef(null);
     const btnSwitchRef = useRef(null);
+    const { favoriteItems } = useContext(FavoriteContext); // Asegúrate de desestructurar correctamente
 
     const handleToggleMenu = () => {
         menuRef.current.classList.toggle('active');
@@ -31,6 +32,7 @@ function Header({ cartItemCount }) {
                     <li><Link to="/Aboutus">Sobre nosotros</Link></li>
                     <li><Link to="/Contact">Contacto</Link></li>
                     <li><Link to="/Search">🔎</Link></li>
+                    <li><Link to="/WishList">❤️ {favoriteItems.length}</Link></li>
                     <li><Link to="/Cart"><CartBadge itemCount={cartItemCount} /></Link></li>
                 </ul>
                 <button ref={btnSwitchRef} className="switch" id="switch" onClick={handleSwitchClick}>
