@@ -1,7 +1,18 @@
-import React from "react";
+import React, {useRef} from "react";
 import { Link } from 'react-router-dom';
 
 function Footer() {
+  const menuRef = useRef(null);
+  const btnSwitchRef = useRef(null);
+  const handleToggleMenu = () => {
+    menuRef.current.classList.toggle('active');
+};
+
+const handleSwitchClick = () => {
+    document.body.classList.toggle('dark');
+    btnSwitchRef.current.classList.toggle('active');
+};
+
   return (
     <footer className="footer">
       <span className="hojaFooter">
@@ -19,7 +30,7 @@ function Footer() {
         </svg>
         <Link to="/">mataplantas.com</Link>
       </span>
-      <ul className="social-icon">
+      <ul className="social-icon" ref={menuRef}>
         <li className="social-icon__item">
           <Link className="social-icon__link" to="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
             <ion-icon name="logo-facebook"></ion-icon>
@@ -41,6 +52,12 @@ function Footer() {
           </Link>
         </li>
       </ul>
+      <button ref={btnSwitchRef} className="switch" id="switch" onClick={handleSwitchClick}>
+                    <span><i className="fa-solid fa-sun"></i></span>
+                    <span><i className="fa-solid fa-moon"></i></span>
+                </button>
+                <input className="menu__btn" type="checkbox" id="menu__btn" />
+                <label className="menu__icon" htmlFor="menu__btn" onClick={handleToggleMenu}><span className="navicon"></span></label>
     </footer>
   );
 }
