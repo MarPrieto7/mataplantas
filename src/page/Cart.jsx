@@ -27,7 +27,7 @@ const Cart = () => {
 
   return (
     <div className="cart-section">
-      <h1 className="section-title">Carrito de Compras</h1>
+      <h1 className="section-title-cart">Resumen de Compra</h1>
       {cartItems.length === 0 ? (
         <p>No hay productos en el carrito.</p>
       ) : (
@@ -54,7 +54,7 @@ const Cart = () => {
           </ul>
           <div className="cart-summary">
             <p>Total del Carrito: {getCartTotal()}€</p>
-          </div>
+            </div>
           <div className="cart-actions">
             <button onClick={handleClearCart}>Vaciar Carrito</button>
             <button className="button button-primary checkout-button" onClick={handleCheckout}>
@@ -64,7 +64,7 @@ const Cart = () => {
         </>
       )}
       <div className="cart-actions">
-        <button onClick={() => navigate('/')}>Volver a la Página de Inicio</button>
+        <button onClick={() => navigate('/')}>Volver a Inicio</button>
       </div>
     </div>
   );
