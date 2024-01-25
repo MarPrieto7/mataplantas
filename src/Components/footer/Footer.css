@@ -26,7 +26,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
   
@@ -118,4 +117,14 @@
     display: block;
     background: none;
     color: #fff;
+  }
+
+  /* Estilos para pantallas pequeñas (por ejemplo, teléfonos) */
+@media only screen and (max-width: 600px) {
+
+  .switch {
+    bottom: 2em;
+    right: 1em; 
+
+    }
   }

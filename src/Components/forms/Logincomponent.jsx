@@ -16,6 +16,7 @@ const Logincomponent = (props) => {
   }
 
   return (
+    <div className='App'>
     <div className="auth-form-container">
       <h2>Inicio sesión</h2>
       <form className="login-form" onSubmit={handleSubmit}>
@@ -26,6 +27,7 @@ const Logincomponent = (props) => {
         <button className="button-login" type="submit">Aceptar</button>
       </form>
       <button className="link-btn" onClick={() => props.onFormSwitch('Registercomponent')}>¿No tienes cuenta?. Regístrate </button>
+    </div>
     </div>
   );
 }
