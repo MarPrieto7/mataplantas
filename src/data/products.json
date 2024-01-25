@@ -45,10 +45,10 @@
     },
     {
         "id": 6,
-        "name": "Geranio 6",
+        "name": "Geranio Rojo",
         "price": 45,
         "category": "Flores",
-        "description": "",
+        "description": "Celebra la resistencia y la singularidad con nuestro cactus. Esta planta robusta y de bajo mantenimiento es ideal para aquellos que buscan un toque de desierto en su hogar. Con formas fascinantes y espinas intrincadas, el cactus aporta un toque moderno y audaz a cualquier entorno.",
         "imgUrl": "./images/geranio6.jpg"
        
     },
@@ -75,13 +75,13 @@
         "name": "Cactus",
         "price": 55,
         "category": "Cactus",
-        "description": "",
+        "description": "Celebra la resistencia y la singularidad con nuestro cactus. Esta planta robusta y de bajo mantenimiento es ideal para aquellos que buscan un toque de desierto en su hogar. Con formas fascinantes y espinas intrincadas, el cactus aporta un toque moderno y audaz a cualquier entorno.",
         "imgUrl": "../images/cactus1.jpg"
      
     },
     {
         "id": 10,
-        "name": "Dracaena Marginata",
+        "name": "Dracaena",
         "price": 35,
         "category": "Cactus",
         "description": "Conoce la belleza única de la Dracaena Marginata, comúnmente conocida como cactus con un palo. Con su tronco delgado y hojas largas y estrechas, esta planta agrega una elegancia tropical a cualquier espacio. Fácil de cuidar, es perfecta para aquellos que desean una planta llamativa y resistente.",
