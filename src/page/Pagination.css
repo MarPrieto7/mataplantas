@@ -21,6 +21,11 @@
   font-weight: 300;
 }
 
+.section-subtittle{
+  font-size:large;
+  padding-bottom: 5vh;
+}
+
 .product-list {
   list-style: none;
   padding: 0;
@@ -69,6 +74,8 @@
   justify-content: center;
 }
 
+
+/* paginacion */
 .pagination {
   margin-top: 20px;
   display: flex;
@@ -127,9 +134,12 @@
 .category h2 {
   font-weight: 300;
   font-size: 35px;
+  margin-left: -1em;
+  margin-bottom: 1vh;
 }
 .category p {
   cursor: pointer;
+  margin-bottom: 3px;
 }
 .category ul {
   list-style: none;
@@ -142,16 +152,33 @@
   padding-left: 30px;
 }
 
-
+/* discount section */
 .discount{
   display: flex;
-  margin-top: 15vh;
+  font-size: larger;
+  gap: 1em;
 }
+.discount-text{
+ padding: 4em;
+}
+.discount-text h2{
+  padding-bottom: 2vh;
+  font-weight: 300;
+}
+.discount-text h3{
+  padding-top: 2vh;
+  font-weight: 300;
+}
+.discount-text p{
+  font-weight: 300;
+  padding-bottom: 3px;
+}
+
 .btn {
   --color1: #1a8516;
   --color2: #236b19;
   perspective: 1000px;
-  padding: 1em 1em;
+  padding: 2em 2em;
   background: linear-gradient(var(--color1), var(--color2));
   border: none;
   outline: none;
@@ -164,6 +191,7 @@
   transform: rotateX(70deg) rotateZ(30deg);
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  margin-top: 4em;
 }
 
 .btn::before {
@@ -198,7 +226,6 @@
 body.dark{
   background-color: rgb(77, 68, 68);
 }
-
 .Corazon{
   border: none;
   background: transparent;
