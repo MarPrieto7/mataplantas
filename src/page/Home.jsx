@@ -10,7 +10,7 @@ import Slider, { SliderComponent } from  '../Components/principal/Slider'
 const Home = () => {
   return (
    
-            <><Principal /><SliderComponent /></>
+            <Principal />
 
       
     
