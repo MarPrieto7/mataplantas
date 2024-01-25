@@ -87,5 +87,49 @@
     opacity: 1;
   }
  
+  /* Estilos para pantallas pequeñas (por ejemplo, teléfonos) */
+@media only screen and (max-width: 700px) {
+    .about-us-tittle {
+      font-size: 36px;
+      margin-bottom: 2vh;
+    }
+
+    .welcome {
+      margin: 4vh;
+    }
+
+    .about-content div {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .team-section {
+      margin-top: 4vh;
+      margin-bottom: 4vh;
+    }
+
+    .team {
+      width: 90%;
+      margin: 20px;
+    }
+
+    .team-section h2 {
+      margin-left: 10px;
+      font-size: 24px;
+    }
+
+    .carousel {
+      height: 250px;
+      margin-top: 5%;
+      margin-left: 25%;
+    }
+
+    .carousel img {
+      width: 200px;
+      height: 200px;
+      border-radius: 4%;
+    }
+
+  }
 
 

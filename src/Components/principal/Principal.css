@@ -89,11 +89,14 @@
     align-items: flex-start;
     justify-content: space-evenly;
     MARGIN-TOP:2%;
+    margin-right: 450px;
 }
 .descripcionGeranio {
     display: flex;
-    flex-direction: column;
     margin-top: 6%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .descripcionGeranio__p1 {
     width: 321px;
@@ -299,3 +302,50 @@
     justify-content: space-between;
     margin: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+    .botones__cruzada--mobile{ 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+    .descripcionGeranio{
+        display: flex;
+        flex-direction: column;
+    }
+    .descripcionGeranio__p1{
+        margin-left: 450px;
+    }
+    .carousel-principal img{
+        margin-left: 15px;
+    }
+}
+
+/* carrusel principal */
+.carousel-principal {
+   
+    display: block;
+    height: 410px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .carousel-principal img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 4%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  .carousel-principal img.active {
+    opacity: 1;
+  }
