@@ -13,11 +13,11 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Formulario enviado:", { name, phone, email, note });
-    
+
     // Simulación de un proceso asíncrono, por ejemplo, una solicitud HTTP
     setTimeout(() => {
       alert("Formulario de contacto enviado con éxito");
-      
+
       // Redirige a la página de inicio después de la alerta
       navigate("/");
     }, 0);

@@ -1,9 +1,41 @@
-import React from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import { SliderComponent } from './Slider';
 import { useNavigate } from 'react-router-dom';
 
 function Principal() {
   const navigate = useNavigate();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const carouselRef = useRef(null);
+
+  const images = [
+    "images/aloe.jpg",
+    "images/anemona.jpg",
+    "images/cactus.png",
+  ];
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+
+    const showImage = (index) => {
+      images.forEach((image, i) => {
+        const imgElement = carousel.children[i];
+        if (i === index) {
+          imgElement.classList.add("active");
+        } else {
+          imgElement.classList.remove("active");
+        }
+      });
+    };
+
+    const nextImage = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      showImage(currentIndex);
+    };
+
+    const intervalId = setInterval(nextImage, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [currentIndex, images]);
 
   return (
     <div>
@@ -23,7 +55,16 @@ function Principal() {
             <p className="descripcionGeranio__p1">
               Según su uso paisajístico se las clasifica como herbáceas, respecto de arbustivas y arbóreas.
             </p>
-            <div> <SliderComponent /></div>
+            <div className="carousel-principal" ref={carouselRef}>
+            {images.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt=""
+                className={index === currentIndex ? "active" : ""}
+              />
+            ))}
+          </div>
           </article>
         </section>
       </div>
