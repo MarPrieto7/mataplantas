@@ -52,6 +52,9 @@ const Pagination = () => {
   return (
 <section className="product-section">
       <h1 className="section-title"> Puedes escoger a tu próxima víctima...</h1>
+      <p className='section-subtittle'>
+        Sabemos que si estás aquí es porque probablemente no tengas la mejor relación con la naturaleza, sólo te pedimos que conozcas tus límites...
+      </p>
 <section className='products'>
       <CategoryFilter 
         categories={getUniqueCategories(productsData)}
@@ -105,21 +108,21 @@ const Pagination = () => {
 
 </section >
 <section className='discount'>
-  <div><p>
+  <div className='discount-text'>
+    <h2>
         ¿Tienes una planta en apuros, triste y desanimada?
-        </p>
+        </h2>
       <p> 
-        ¡No te preocupes, amigo! En Matoplantas.com te ofrecemos un descuento especial si nos traes tu planta que parece más un zombie que una belleza verde.</p>
-        <p>
+        ¡No te preocupes, amigo! En Matoplantas.com te ofrecemos un descuento especial si nos traes tu planta que parece más un zombie que una belleza verde.
+       
            No importa si está marchita, despeinada o con una crisis de identidad, aquí la recuperaremos...
       </p>
-      <p>
-        ¡A qué esperas para coger tu descuento!
-      </p>
+      <h3>
+        ¡A qué esperas para obtener tu descuento!
+      </h3>
 </div>
-<div><button class="btn">50% dsct</button></div>
+<div><a><button className="btn">50% de descuento</button></a></div>
 </section>
-      
     </section>
   );
 };

@@ -10,16 +10,16 @@ function Footer() {
     <a href="#">mataplantas.com</a>
     </span> 
     <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/people/Cannabis24h/100063536683737/">
           <ion-icon name="logo-facebook"></ion-icon>
         </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Cannabis24h">
           <ion-icon name="logo-twitter"></ion-icon>
         </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://es.linkedin.com/in/alejoxvargas/en">
           <ion-icon name="logo-linkedin"></ion-icon>
         </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/cannabisn24/">
           <ion-icon name="logo-instagram"></ion-icon>
         </a></li>
     </ul>
