@@ -1,14 +1,21 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
-// Creando el contexto con un estado y función de actualización por defecto
 const FavoriteContext = createContext({
     favoriteItems: [],
     updateFavoriteItems: () => {}
 });
 
-// Componente proveedor que encapsula la lógica del estado
 export const FavoriteProvider = ({ children }) => {
-    const [favoriteItems, setFavoriteItems] = useState([]);
+    // Inicializa el estado con los favoritos almacenados en localStorage, si existen
+    const [favoriteItems, setFavoriteItems] = useState(() => {
+        const savedFavorites = localStorage.getItem('favoriteItems');
+        return savedFavorites ? JSON.parse(savedFavorites) : [];
+    });
+
+    // Actualiza localStorage cuando cambia favoriteItems
+    useEffect(() => {
+        localStorage.setItem('favoriteItems', JSON.stringify(favoriteItems));
+    }, [favoriteItems]);
 
     const updateFavoriteItems = (newItems) => {
         setFavoriteItems(newItems);

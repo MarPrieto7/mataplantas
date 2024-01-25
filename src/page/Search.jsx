@@ -3,8 +3,7 @@ import SearchItems from '../Components/searchItems/SearchItems';
 
 const Search = () => {
   return (   
-            <SearchItems / >    
-    
+            <SearchItems />    
   )
 }
 

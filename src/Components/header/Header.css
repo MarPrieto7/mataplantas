@@ -1,261 +1,195 @@
 /* Header Styles */
 .header {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    
-  }
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  
+}
 
- 
-  .barra {
-    background-color: #bf4f4e;
-    height: 7rem; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px; /* Añadido espaciado a los lados */
-  }
 
-  
 
-  .logoStyle{
-    width: 5rem;;
-  }
-  
-  .barra a {
-    color: #fff;
-    text-decoration: none;
-    padding-left: 1%;
-  }
-  
-  .lableIt {
-    line-height: 20px;
-    font-size: 0.8rem;
-    color: #2B2E4A;
-    font-family: 'Krona One', sans-serif;
-    letter-spacing: 1px;
-  }
-  
-  .menu {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-  
-  .menu nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu nav ul li {
-    margin-right: 10px;
-  }
-  
-  .barra .menu nav ul li a {
-    background-color: brown;
-    color: rgb(40, 17, 188);
-    text-decoration: none;
-    
-  }
-  
-  .menu__btn {
-    display: none;
-  }
-  
-  
-  .cart-badge {
-    position: relative;
-    margin-top:-20px;
-  }
-  
-  .cart-badge a {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .cart-badge span.item-count {
-    position: absolute;
-    margin-top: -10px;
-    left: 20px;
-    
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 14px; /* Ajusta el tamaño del número según sea necesario */
-    color: white; /* Ajusta el color del texto según sea necesario */
-  }  
-
-  /* Estilo de los iconos SVG en el botón Toggle Modo Oscuro */
-  #toggleBtn .svg-icon {
-    margin-right: 5px;
-  }
-  
-     /* boton modo oscuro*/
-
-.button--modoOscuro {
+.barra {
+  background-color: #bf4f4e;
+  height: 7rem; 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 6px 12px;
-  gap: 8px;
-  height: 23px;
-  width: auto;
-  border: none;
-  background: #fff;
-  border-radius: 20px;
-  cursor: pointer;
-  position: absolute;
-  right: 2%;
+  padding: 0 20px; /* Añadido espaciado a los lados */
+  padding-right: 350px;
+  font-size: 21px;
 }
-.button--modoOscuro:hover{
-  font-size: 1rem;
 
+
+
+.logoStyle{
+  width: 5rem;;
 }
+
+.barra a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 1%;
+}
+
 .lableIt {
-line-height: 20px;
-font-size: 0.8rem;
-color:#2B2E4A;
-font-family: 'Krona One', sans-serif;
-letter-spacing: 1px;
-}
-.button--modoOscuro:hover .svg-icon {
-  animation: spin 2s linear infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(-360deg);
-  }
+  line-height: 20px;
+  font-size: 0.8rem;
+  color: #2B2E4A;
+  font-family: 'Krona One', sans-serif;
+  letter-spacing: 1px;
 }
 
-@media screen and (max-width: 800px) {
-  /* menu icon */
-  .header {
-      position: relative;
-      width: 100%;
-      width: 100%;
-      margin: 0 auto;
-  }
-  .barra{
-      height: 72px;
-      
-  }
-  .logo{
-      z-index: 4;
-      padding: 25px 20px;
-      position: absolute;
-  }
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu nav ul li {
+  margin-right: 10px;
+}
+
+.barra .menu nav ul li a {
+  background-color: brown;
+  color: rgb(40, 17, 188);
+  text-decoration: none;
   
+}
+
+.menu__btn {
+  display: none;
+}
+
+
+.cart-badge {
+  position: relative;
+  margin-top:-20px;
+}
+
+.cart-badge a {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-badge span.item-count {
+  position: absolute;
+  margin-top: -10px;
+  left: 20px;
+  
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 14px; /* Ajusta el tamaño del número según sea necesario */
+  color: white; /* Ajusta el color del texto según sea necesario */
+}  
+/* Estilos del menú para pantallas pequeñas y grandes */
+@media screen and (max-width: 800px) {
+  .barra {
+    height: 90px;
+  }
+
+  .logo {
+    z-index: 4;
+    padding: 4px 20px;
+    position: absolute;
+  }
+
   .header .menu__icon {
-      cursor: pointer;
-      padding: 25px 20px;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      user-select: none;
-      z-index: 5;
-      display: block;
+    cursor: pointer;
+    padding: 25px 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    user-select: none;
+    z-index: 5;
+    display: block;
   }
-    
+
   .header .menu__icon .navicon {
-      background: #ffffff;
-      display: block;
-      height: 2px;
-      position: relative;
-      transition: background .2s ease-out;
-      width: 18px;
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
   }
-    
+
   .header .menu__icon .navicon:before,
   .header .menu__icon .navicon:after {
-      background: #ffffff;
-      content: '';
-      display: block;
-      height: 100%;
-      position: absolute;
-      transition: all .2s ease-out;
-      width: 100%;
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
   }
+
   .header .menu__icon .navicon:before {
-      top: 5px;
+    top: 5px;
   }
+
   .header .menu__icon .navicon:after {
-      top: -5px;
+    top: -5px;
   }
-  .header__wrapper {
-      position: fixed;
-      background: transparent;
-      z-index: 5;
-      padding-top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      height: 90px;
-  }
-  .logo {
-      z-index: 4;
-      padding: 4px 20px;
-      position: absolute;
-  }
-  .button--modoOscuro{
-      right:23%;
-  }
-  .hero img {
-      margin-left: -69px;
-  }
-    
-  /* menu btn */
+
   .header .menu__btn {
-      display: none;
+    display: none;
   }
+
   .header .menu__btn:checked ~ .menu {
-      transform: translateX(0);
-      transition: all .6s ease-out;  
+    transform: translateX(0);
+    transition: all .6s ease-out;
   }
+
   .header .menu__btn:checked ~ .menu__icon .navicon {
-      background: transparent;
+    background: transparent;
   }
+
   .header .menu__btn:checked ~ .menu__icon .navicon:before {
-      transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
+
   .header .menu__btn:checked ~ .menu__icon .navicon:after {
-      transform: rotate(45deg);
+    transform: rotate(45deg);
   }
+
   .header .menu__btn:checked ~ .menu__icon:not(.steps) .navicon:before,
   .header .menu__btn:checked ~ .menu__icon:not(.steps) .navicon:after {
-      top: 0;
+    top: 0;
   }
+
   .menu {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      background-color: #ABC07F;
-      transform: translateX(1000px);
-      transition: all .6s ease-out;
-      z-index: 1;
-      justify-content: space-evenly;
-      top: 0px;
-      flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #abc07f;
+    transform: translateX(1000px);
+    transition: all .6s ease-out;
+    z-index: 4;
+    justify-content: space-evenly;
+    top: 0px;
+    flex-wrap: nowrap;
   }
-  .menu__item{
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      color: #ffffff;
-      padding:0 3% 0 3%;
-      text-decoration: none;
+
+  .menu__item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 3% 0 3%;
+    text-decoration: none;
   }
-  .menu__item:hover{
-      color:#A60304;
+
+  .menu__item:hover {
+    color: #a60304;
   }
-      
- 
-}  
-         
+}

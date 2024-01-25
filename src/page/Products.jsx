@@ -4,8 +4,10 @@ import CategoryFilter from '../CategoryFilter';
 import { CartContext } from '../context/CartContext';
 import productsData from '../data/products.json';
 import Card from '../Components/Card/Card';
+import { useNavigate } from 'react-router-dom';
 
 const Pagination = () => {
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -13,7 +15,7 @@ const Pagination = () => {
 
   const { addToCart, updateCartItemCount } = useContext(CartContext);
 
-  const productsPerPage = 3;
+  const productsPerPage = 4;
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 
@@ -108,21 +110,22 @@ const Pagination = () => {
 
 </section >
 <section className='discount'>
-  <div><p>
+  <div className='discount-text'>
+    <h2>
         ¿Tienes una planta en apuros, triste y desanimada?
-        </p>
+        </h2>
       <p> 
-        ¡No te preocupes, amigo! En Matoplantas.com te ofrecemos un descuento especial si nos traes tu planta que parece más un zombie que una belleza verde.</p>
-        <p>
+        ¡No te preocupes, amigo! En Matoplantas.com te ofrecemos un descuento especial si nos traes tu planta que parece más un zombie que una belleza verde.
+       
            No importa si está marchita, despeinada o con una crisis de identidad, aquí la recuperaremos...
       </p>
-      <p>
-        ¡A qué esperas para coger tu descuento!
-      </p>
+      <h3>
+        ¡A qué esperas para obtener tu descuento!
+      </h3>
 </div>
-<div><button class="btn">50% dsct</button></div>
+<div><button class="btn" onClick={() => navigate('/Login')}>50% dsct</button></div>
+
 </section>
-      
     </section>
   );
 };
