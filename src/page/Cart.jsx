@@ -56,15 +56,15 @@ const Cart = () => {
             <p>Total del Carrito: {getCartTotal()}€</p>
             </div>
           <div className="cart-actions">
-            <button onClick={handleClearCart}>Vaciar Carrito</button>
-            <button className="button button-primary checkout-button" onClick={handleCheckout}>
+            <button className="Vaciar" onClick={handleClearCart}>Vaciar Carrito</button>
+            <button className="Pay" onClick={handleCheckout}>
               Pagar
             </button>
           </div>
         </>
       )}
       <div className="cart-actions">
-        <button onClick={() => navigate('/')}>Volver a Inicio</button>
+        <button className="Inicio" onClick={() => navigate('/')}>Volver a Inicio</button>
       </div>
     </div>
   );

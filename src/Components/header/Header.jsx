@@ -1,34 +1,44 @@
-import React, { useContext } from "react";
-import { Link } from 'react-router-dom';
-import CartBadge from '../cart/CartBadge'
+import React, { useState, useContext } from "react";
+import { NavLink } from 'react-router-dom';
+import CartBadge from '../cart/CartBadge';
 import FavoriteContext from "../../context/FavoriteContext";
 
 function Header({ cartItemCount }) {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const { favoriteItems } = useContext(FavoriteContext);
 
-    const { favoriteItems } = useContext(FavoriteContext); // Asegúrate de desestructurar correctamente
+    const handleToggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
-
+    const handleNavLinkClick = () => {
+        setMenuOpen(false); // Cierra el menú al hacer clic en un enlace
+    };
 
     return (
         <header className="header">
             <nav className="barra">
                 <div className="logo">
-                    <Link to="/"><img className="logoStyle" src="../images/logo.webp" alt="logo mataplanta"></img></Link>
+                    <NavLink to="/"><img className="logoStyle" src="../images/logo.webp" alt="logo mataplanta" /></NavLink>
                 </div>
-                <ul className="menu">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/Products">Products</Link></li>
-                    <li><Link to="/Login">Login</Link></li>
-                    <li><Link to="/Aboutus">About us</Link></li>
-                    <li><Link to="/Contact">Contact</Link></li>
-                    <li><Link to="/Search">🔎</Link></li>
-                    <li><Link to="/WishList">❤️{favoriteItems.length}</Link></li>
-                    <li><Link to="/Cart"><CartBadge itemCount={cartItemCount} /></Link></li>
-                </ul>
 
+                <input className="menu__btn" type="checkbox" id="menu__btn" />
+                <label className="menu__icon" htmlFor="menu__btn" onClick={handleToggleMenu}><span className="navicon"></span></label>
+                {/* <!--Menú--> */}
+                <ul className={`menu ${menuOpen ? 'active' : ''}`}>
+                    <li><NavLink to="/" onClick={handleNavLinkClick}>Inicio</NavLink></li>
+                    <li><NavLink to="/Products" onClick={handleNavLinkClick}>Productos</NavLink></li>
+                    <li><NavLink to="/Login" onClick={handleNavLinkClick}>Login</NavLink></li>
+                    <li><NavLink to="/Aboutus" onClick={handleNavLinkClick}>Sobre nosotros</NavLink></li>
+                    <li><NavLink to="/Contact" onClick={handleNavLinkClick}>Contacto</NavLink></li>
+                    <li><NavLink to="/Search" onClick={handleNavLinkClick}>🔎</NavLink></li>
+                    <li><NavLink to="/WishList" onClick={handleNavLinkClick}>❤️ {favoriteItems.length}</NavLink></li>
+                    <li><NavLink to="/Cart" onClick={handleNavLinkClick}><CartBadge itemCount={cartItemCount} /></NavLink></li>
+                </ul>
             </nav>
         </header>
     );
 }
 
 export default Header;
+

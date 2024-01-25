@@ -10,8 +10,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 8px;
-  height: auto;
-  line-height: 1.5;
+  min-height: calc(100vh - 180px); 
 }
 
 .cart-list {
@@ -52,56 +51,49 @@
 .cart-summary {
   margin-top: 20px;
 }
-
+/* Estilos generales para los botones de cart-actions */
 .cart-actions {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Márgen superior entre los botones y el contenido del carrito */
+  margin-top: 20px;
 }
 
 .cart-actions button {
-  padding: 10px;
+  padding: 15px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: medium;
 }
 
-
 .cart-actions button {
-  margin: 0 10px; /* Espaciado entre botones */
+  margin: 0 10px;
 }
 
 /* Estilo para el botón de "Vaciar Carrito" */
-.cart-actions button:first-child {
-  background-color: #bf4f4e; /* Color del botón */
-  color: #fff; /* Color del texto del botón */
-  font-size: medium;
-  border-radius: 10px;
-  padding: 20px;
+.cart-actions button.Vaciar {
+  background-color: #bf4f4e;
+  color: #fff;
 }
 
 /* Estilo para el botón de "Pagar" */
-.cart-actions button.button-primary.checkout-button {
-  border: #ABC07F solid 0.15em;
+.cart-actions button.Pay {
   background-color: #ABC07F;
-  transition: border 300ms, color 300ms, transform 0.3s;
-  padding: 30px;
-  border-radius: 10px;
-  cursor: pointer;
   color: rgb(2, 44, 28);
-  position: relative;
-  overflow: hidden;
-  font-size: medium;
-  font-weight: 800;
+  border: #ABC07F solid 0.15em;
+  transition: background-color 300ms, color 300ms, transform 0.3s;
+  font-weight: 600;
+}
+
+/* Efecto de escala al pasar el ratón sobre el botón "Pagar" */
+.cart-actions button.Pay:hover {
+  transform: scale(1.05);
 }
 
 /* Estilo para el botón de "Volver a la Página de Inicio" */
-.cart-actions button:last-child {
-  background-color: #3498db; /* Color del botón */
-  color: #fff; /* Color del texto del botón */
-  font-size: medium;
-  border-radius: 10px;
-  padding: 20px;
+.cart-actions button.Inicio {
+  background-color: #3498db;
+  color: #fff;
 }
 
 /* Estilos para botón de incrementar */
@@ -127,8 +119,14 @@ cursor: pointer;
 
 
 @media (max-width: 590px) {
-  
+  .cart-actions {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .cart-actions button {
+    margin: 10px 0;
+  }
  
   .cart-section {
     max-width: 230px;
