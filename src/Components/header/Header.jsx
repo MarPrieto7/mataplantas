@@ -26,11 +26,11 @@ function Header({ cartItemCount }) {
                 <label className="menu__icon" htmlFor="menu__btn" onClick={handleToggleMenu}><span className="navicon"></span></label>
                 {/* <!--Menú--> */}
                 <ul className={`menu ${menuOpen ? 'active' : ''}`}>
-                    <li><NavLink to="/" onClick={handleNavLinkClick}>Inicio</NavLink></li>
-                    <li><NavLink to="/Products" onClick={handleNavLinkClick}>Productos</NavLink></li>
+                    <li><NavLink to="/" onClick={handleNavLinkClick}>Home</NavLink></li>
+                    <li><NavLink to="/Products" onClick={handleNavLinkClick}>Products</NavLink></li>
                     <li><NavLink to="/Login" onClick={handleNavLinkClick}>Login</NavLink></li>
-                    <li><NavLink to="/Aboutus" onClick={handleNavLinkClick}>Sobre nosotros</NavLink></li>
-                    <li><NavLink to="/Contact" onClick={handleNavLinkClick}>Contacto</NavLink></li>
+                    <li><NavLink to="/Aboutus" onClick={handleNavLinkClick}>About us</NavLink></li>
+                    <li><NavLink to="/Contact" onClick={handleNavLinkClick}>Contact</NavLink></li>
                     <li><NavLink to="/Search" onClick={handleNavLinkClick}>🔎</NavLink></li>
                     <li><NavLink to="/WishList" onClick={handleNavLinkClick}>❤️ {favoriteItems.length}</NavLink></li>
                     <li><NavLink to="/Cart" onClick={handleNavLinkClick}><CartBadge itemCount={cartItemCount} /></NavLink></li>

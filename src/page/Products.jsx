@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import ProductModal from '../page/ProductModal';
-import CategoryFilter from '../CategoryFilter';
+import CategoryFilter from '../../src/Components/CategoryFilter';
 import { CartContext } from '../context/CartContext';
 import productsData from '../data/products.json';
 import Card from '../Components/Card/Card';

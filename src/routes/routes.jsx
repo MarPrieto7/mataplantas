@@ -13,9 +13,6 @@ import FavoriteList from '../Components/Wish/Wish';
 import AboutUs from '../page/Aboutus'
 
 
-
-
-import '../App.css';
 import '../Components/footer/Footer.css';
 import '../Components/header/Header.css';
 import '../page/Pagination.css';

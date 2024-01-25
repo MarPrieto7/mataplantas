@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Mata Plantas
+Matoplantas es una aplicación web de comercio electrónico dedicada a los amantes de las plantas, ofreciendo una amplia variedad de opciones para embellecer tu espacio, con un enfoque especial en los geranios. Nuestra plataforma es intuitiva y fácil de usar, diseñada para brindarte una experiencia de compra agradable y eficiente.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Característica Principales
 
-## Available Scripts
+Catálogo Extensivo: Explora nuestra amplia gama de plantas, incluyendo nuestros geranios estrella, perfectos para darle vida y color a cualquier ambiente.
 
-In the project directory, you can run:
+Conoce Matoplantas: Descubre más sobre nuestra empresa en la sección "Sobre Nosotros", donde compartimos nuestra historia, misión y visión.
 
-### `npm start`
+Navegación Fácil: Accede rápidamente a todos los apartados de nuestro sitio a través de nuestra página principal, diseñada pensando en tu comodidad.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Filtros Interactivos: Encuentra exactamente lo que buscas con nuestros filtros interactivos, que te permiten seleccionar productos según características específicas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Búsqueda Rápida: Utiliza nuestra barra de búsqueda interactiva para encontrar directamente el producto que deseas, ahorrando tiempo y esfuerzo.
 
-### `npm test`
+Seguridad y Accesibilidad: Regístrate y accede a tu cuenta de manera segura. Nuestros formularios de login y registro incluyen validaciones y captcha de Google para tu seguridad.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Carrito de Compras: Añade tus plantas favoritas al carrito de compras y gestiona tus pedidos de manera eficiente.
 
-### `npm run build`
+Favoritos: Marca productos como favoritos y revísalos en un apartado especial. ¡No pierdas de vista esas plantas que te encantan!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Fondo de primera pagina](aqui va e link de la imagen de github)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tecnologías Utilizadas 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- HTML
+- CSS
+- JavaScript
+- Json
+- Fetch API para solicitudes HTTP
+- REACT 
+- REACT (HOOKS)
+- REACT ROUTER DOM
+- REACT MODAL
+- REACT GOOGLE RECAPTCHA
 
-### `npm run eject`
+## Cómo Ejecutar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para ejecutar este proyecto en tu máquina local, asegúrate de tener instalado lo siguiente:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Un navegador web moderno.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Instalacion
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1- Clona el repositorio:
 
-## Learn More
+> git clone aqui va el link del repositorio
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2- Navega al directorio del proyecto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> cd aqui va el nombre del proyecto
 
-### Code Splitting
+3- Intalar:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> npm install
 
-### Analyzing the Bundle Size
+4- Iniciar Proyecto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> npm start
 
-### Making a Progressive Web App
+## Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Una vez que el proyecto está en ejecución, puedes:
 
-### Advanced Configuration
+- Navegar en las diferentes paginas y ver las caracteristicas de todos los pokemones existetes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Usar la barra de busqueda para conseguir las caracteristica del pokemon de tu preferencia.
 
-### Deployment
+## Créditos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+####Diseño e implementación: 
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Andrea García
+- Jean Carlos Pérez
+- Mar Prieto
+- David Cabrerizo
+- Fiorella Sandoval
