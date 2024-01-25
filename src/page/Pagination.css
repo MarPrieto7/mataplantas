@@ -222,9 +222,9 @@
   transform: rotateX(30deg) rotateZ(0);
 }
 
- /* Switch dark ///////////////////////////////////////////////////////////////////////*/
+ /* Switch dark */
 body.dark{
-  background-color: rgb(77, 68, 68);
+  background-color: rgb(77, 68, 68)!important;
 }
 .Corazon{
   border: none;
@@ -235,4 +235,9 @@ body.dark{
 
 .probando{
   min-height: calc(100vh - 100px);
+}
+
+.botonesWish{
+  display: flex;
+  flex-direction: column;
 }

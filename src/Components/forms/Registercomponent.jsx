@@ -33,6 +33,7 @@ export const Registercomponent = (props) => {
   }
 
   return (
+    <div className="App">
     <div className="auth-form-container">
       <h2>Regístrate</h2>
       <form className="register-form" onSubmit={handleSubmit}>
@@ -50,6 +51,7 @@ export const Registercomponent = (props) => {
         </div>
         <button className="button-register" type="submit">Aceptar</button>
       </form>
+    </div>
     </div>
   );
 }
