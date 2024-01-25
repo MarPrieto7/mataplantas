@@ -4,8 +4,10 @@ import CategoryFilter from '../CategoryFilter';
 import { CartContext } from '../context/CartContext';
 import productsData from '../data/products.json';
 import Card from '../Components/Card/Card';
+import { useNavigate } from 'react-router-dom';
 
 const Pagination = () => {
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
   const [showModal, setShowModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -120,7 +122,8 @@ const Pagination = () => {
         ¡A qué esperas para coger tu descuento!
       </p>
 </div>
-<div><button class="btn">50% dsct</button></div>
+<div><button class="btn" onClick={() => navigate('/Login')}>50% dsct</button></div>
+
 </section>
       
     </section>
