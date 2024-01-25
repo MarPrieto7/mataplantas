@@ -175,7 +175,7 @@
     background-color: #abc07f;
     transform: translateX(1000px);
     transition: all .6s ease-out;
-    z-index: 1;
+    z-index: 4;
     justify-content: space-evenly;
     top: 0px;
     flex-wrap: nowrap;
