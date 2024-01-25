@@ -139,9 +139,7 @@
     top: -5px;
   }
 
-  .header .menu__btn {
-    display: none;
-  }
+ 
 
   .header .menu__btn:checked ~ .menu {
     transform: translateX(0);
