@@ -123,7 +123,7 @@ const Pagination = () => {
         ¡A qué esperas para obtener tu descuento!
       </h3>
 </div>
-<div><button class="btn" onClick={() => navigate('/Login')}>50% de descuento</button></div>
+<div><button class="btn" onClick={() => navigate('/Login')}>50% de Descuento</button></div>
 
 </section>
     </section>

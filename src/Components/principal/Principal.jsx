@@ -1,6 +1,6 @@
+import { decorator } from '@babel/types';
 import React, {useState, useRef, useEffect} from 'react';
-import { SliderComponent } from './Slider';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function Principal() {
   const navigate = useNavigate();
@@ -37,17 +37,19 @@ function Principal() {
     return () => clearInterval(intervalId);
   }, [currentIndex, images]);
 
+
+
   return (
     <div>
       <section className="hero">
-        <img src="../images/geranio9.jpg" alt="" />
+        <img src="../images/geranio9.jpg" alt="geranio rojo" />
         <div className="heroGeranium">
           <a className="gigante">GE<br />RA <br />NIUM</a>
           <p className="descripcionGeranio__hero">El género Geranium, comúnmente llamado geranio, agrupa 422 especies de plantas anuales, bienales y perennes frecuentemente utilizadas en jardinería por sus atractivas flores y su aroma característico</p>
         </div>
       </section>
 
-      <div>
+    <div>
         <div className="barrRosa"></div>
         {/* zona secundaria sección fotos */}
         <section className="infoGeranio">
@@ -55,6 +57,7 @@ function Principal() {
             <p className="descripcionGeranio__p1">
               Según su uso paisajístico se las clasifica como herbáceas, respecto de arbustivas y arbóreas.
             </p>
+            <NavLink to="/Products">
             <div className="carousel-principal" ref={carouselRef}>
             {images.map((src, index) => (
               <img
@@ -64,7 +67,7 @@ function Principal() {
                 className={index === currentIndex ? "active" : ""}
               />
             ))}
-          </div>
+          </div></NavLink>
           </article>
         </section>
       </div>
@@ -76,11 +79,15 @@ function Principal() {
           <button className='button' onClick={() => navigate('/Login')}>SOY CULPABLE</button>
         </section>
         <div className="barrVerdeBaja"><a className="textoBarra___medio">...y para que no te vuelva a pasar</a></div>
+        <NavLink to="/Products" style={{ textDecoration: 'none' }}>
         <div className="botones__cruzada--mobile">
-          <button className="button" >ABONO <img src="./images/abono.svg" alt="icono abono" /></button>
-          <button className="button" >SUSTRATO<img src="./images/sustrato.svg" alt="icono abono" /></button>
-          <button className="button" >RIEGO<img src="./images/riego.svg" alt="icono abono" /></button>
+        
+        <button className="button" >ABONO <img src="./images/abono.svg" alt="icono abono" /></button>
+        <button className="button" >SUSTRATO<img src="./images/sustrato.svg" alt="icono abono" /></button>
+        <button className="button" >RIEGO<img src="./images/riego.svg" alt="icono abono" /></button>
+       
         </div>
+        </NavLink>
       </div>
     </div>
   );
