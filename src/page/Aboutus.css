@@ -65,7 +65,7 @@
     height: 410px;
     overflow: hidden;
     justify-content: center;
-    margin-top: -35%;
+    margin-top: -30%;
     margin-left: 65%;
     position: relative;
     z-index: 1;
@@ -88,4 +88,23 @@
   }
  
 
-
+  @media screen and (max-width: 1050px){
+    
+    .about-content div{
+        width: auto;
+    }
+    .team{
+        width: auto;
+    }
+    .team-section h2{
+        text-align: center;
+        margin-left: 0;
+    }
+    .team-section p{
+        text-align: center;
+    }
+    .carousel {
+        margin-top: 2em;
+        margin-left: 15%;
+      }
+  }

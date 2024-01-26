@@ -21,11 +21,6 @@
   font-weight: 300;
 }
 
-.section-subtittle{
-  font-size:large;
-  padding-bottom: 5vh;
-}
-
 .product-list {
   list-style: none;
   padding: 0;
@@ -174,6 +169,7 @@
   padding-bottom: 3px;
 }
 
+/* boton descuento */
 .btn {
   --color1: #1a8516;
   --color2: #236b19;
@@ -192,6 +188,8 @@
   transform-style: preserve-3d;
   transition: transform 0.5s;
   margin-top: 4em;
+  margin-right: 2em;
+  border-radius: 8%;
 }
 
 .btn::before {
@@ -204,6 +202,7 @@
   right: 0;
   transform: rotateX(90deg);
   transform-origin: bottom;
+  border-radius: 8%;
 }
 
 .btn::after {
@@ -222,10 +221,7 @@
   transform: rotateX(30deg) rotateZ(0);
 }
 
- /* Switch dark ///////////////////////////////////////////////////////////////////////*/
-body.dark{
-  background-color: rgb(77, 68, 68);
-}
+
 .Corazon{
   border: none;
   background: transparent;
@@ -235,4 +231,20 @@ body.dark{
 
 .probando{
   min-height: calc(100vh - 100px);
+}
+
+/* Responsive */
+@media screen and (max-width: 1050px){
+  .discount{
+    display: grid;
+  }
+  .btn{
+    margin-top: auto;
+   margin-bottom: 2em;
+  }
+}
+
+/* Switch dark ///////////////////////////////////////////////////////////////////////*/
+body.dark{
+  background-color: rgb(77, 68, 68);
 }
