@@ -322,6 +322,14 @@
     .carousel-principal img{
         margin-left: 15px;
     }
+    .hero img {
+        max-width: 55%;
+        margin-left: 8px;
+        height: 170px;
+    }
+    .logoStyle {
+        width: 3rem;
+    }
 }
 
 /* carrusel principal */
