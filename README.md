@@ -27,7 +27,6 @@ Catálogo Extensivo: Explora nuestra amplia gama de plantas, incluyendo nuestros
 - CSS
 - JavaScript
 - Json
-- Fetch API para solicitudes HTTP
 - REACT 
 - REACT (HOOKS)
 - REACT ROUTER DOM
@@ -60,7 +59,7 @@ Para ejecutar este proyecto en tu máquina local, asegúrate de tener instalado 
 
 ## Uso
 
-####Una vez que el proyecto esté en ejecución, podrás realizar diversas acciones:
+#### Una vez que el proyecto esté en ejecución, podrás realizar diversas acciones:
 
 - Navegar por la Página de Inicio: Explora la página de inicio para tener una vista general de lo que ofrece nuestro sitio.
 
@@ -72,7 +71,7 @@ Para ejecutar este proyecto en tu máquina local, asegúrate de tener instalado 
 
 - Utilizar la Búsqueda Especial: Si necesitas algo específico, usa nuestra función de búsqueda especializada para encontrar rápidamente los productos que necesitas.
 
-####Además, tendrás acceso a tres formularios funcionales:
+#### Además, tendrás acceso a tres formularios funcionales:
 
 - Formulario de Inicio de Sesión: Si ya estás registrado, podrás acceder fácilmente a tu cuenta a través del formulario de inicio de sesión.
 
@@ -83,7 +82,7 @@ Para ejecutar este proyecto en tu máquina local, asegúrate de tener instalado 
 
 ## Créditos
 
-####Diseño e implementación: 
+#### Diseño e implementación: 
 
 - Andrea García
 - Jean Carlos Pérez
@@ -91,7 +90,7 @@ Para ejecutar este proyecto en tu máquina local, asegúrate de tener instalado 
 - David Cabrerizo
 - Fiorella Sandoval
 
-##Agradecimientos
+## Agradecimientos
 
 Queremos expresar nuestro más sincero agradecimiento a Mayid Ramiréz, quien fue el iniciador y creador original de este proyecto. Su visión, dedicación y esfuerzo han sido fundamentales para hacer de Mataplantas lo que es hoy.
 
