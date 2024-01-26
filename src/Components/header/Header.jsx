@@ -19,7 +19,7 @@ function Header({ cartItemCount }) {
         <header className="header">
             <nav className="barra">
                 <div className="logo">
-                    <NavLink to="/"><img className="logoStyle" src="../images/logo.webp" alt="logo mataplanta" /></NavLink>
+                    <NavLink to="/"><img className="logoStyle" src="../../images/Recurso_6.png" alt="logo mataplanta" /></NavLink>
                 </div>
 
                 <input className="menu__btn" type="checkbox" id="menu__btn" />
