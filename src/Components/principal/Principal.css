@@ -21,11 +21,6 @@
     text-align: right;
     margin: 1%;
 }
-.hero img {
-    max-width: 59%;
-    margin-left: -178px;
-    height: auto;
-}
 .slide {
     display: flex;
     justify-content: flex-start;
@@ -64,8 +59,8 @@
 }
 .hero img {
     max-width: 59%;
-    margin-left: -178px;
     height: auto;
+    margin-left: -50px;
 }
 
 .descripcionGeranio__hero{
@@ -100,11 +95,12 @@
 }
 .descripcionGeranio__p1 {
     width: 321px;
-    margin: 3%  64px 0 10%;
+    margin: 3%  0 0 10%;
     color: #000;
     font-family: 'krona one', sans-serif;
     font-weight: 800;
     font-size: 20px;
+    text-align:center
 }
 .descripcionGeranio__p2{
     color: #000;
@@ -135,8 +131,8 @@
 }
 .barrVerde{
     background-color: #ABC07F;
-    margin-top: 40px;
     height: 30px;
+    margin-top: 40px;
     width: 100%;
     display:flex;
 }
@@ -152,7 +148,7 @@
     width: 225px;
     height: 89px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 .porcentaje a{
@@ -230,6 +226,9 @@
     user-select: none;
     min-width: 182px;
   }
+.botones__cruzada--mobile .button{
+    text-decoration: none;
+}
   
   .button p {
     z-index: 1;
@@ -291,16 +290,17 @@
 
 }
 .botones__cruzada--mobile button img {
-    max-height: 38px;
-    display: flex; 
+    max-height: 35px;
+    display: flex;
     position: absolute;
-    right: 45px;
+    right: 30px;
 }
 
 .botones__cruzada--mobile{
     display: flex;
     justify-content: space-between;
     margin: 30px;
+    gap: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -319,8 +319,49 @@
     .descripcionGeranio__p1{
         margin-left: 450px;
     }
+    .hero img {
+        max-width: 55%;
+        margin-left: 8px;
+        height: 220px;
+    }
+    .logoStyle {
+        width: 3rem;
+    }
+    .porcentaje {
+        background-color: #d9898a;
+        height: 70px;
+        justify-content: center;
+        width: 70px;
+    }
+    .descuento {
+        flex-flow: row;
+        justify-content: space-around;
+        min-height: 204px;
+    }
+    .button {
+        all: unset;
+        align-items: center;
+        border: 0.15em solid #abc07f;
+        border-radius: 0.25em;
+        color: #022c1c;
+        cursor: pointer;
+        display: flex;
+        font-size: 18px;
+        font-weight: 600;
+        min-width: 165px;
+        overflow: hidden;
+        padding: 0.6em 1em;
+        position: relative;
+        transition: border .3s,color .3s;
+        -webkit-user-select: none;
+        user-select: none;
+    }
     .carousel-principal img{
+        margin-top: 20px;
         margin-left: 15px;
+    }
+    .hero img{
+        margin-left: -1px;
     }
 }
 

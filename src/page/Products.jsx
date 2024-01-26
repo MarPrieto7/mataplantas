@@ -124,26 +124,25 @@ const Pagination = () => {
             </button>
           </div>
         </section>
-      </section>
-      {showProductModal && selectedProduct && !showCartModal && (
-        <Modal message={`Detalles del producto: ${selectedProduct.name}, Precio: ${selectedProduct.price}€`} closeModal={() => setShowProductModal(false)} />
-      )}
-      {showCartModal && selectedProduct && (
-        <Modal message={`Producto añadido al carrito: ${selectedProduct.name}`} closeModal={() => setShowCartModal(false)} />
-      )}
-      <section className='discount'>
-        <div className='discount-text'>
-          <h2>¿Tienes una planta en apuros, triste y desanimada?</h2>
-          <p>
-            ¡No te preocupes, amigo! En Matoplantas.com te ofrecemos un descuento especial si nos traes tu planta que parece más un zombie que una belleza verde.
-            No importa si está marchita, despeinada o con una crisis de identidad, aquí la recuperaremos...
-          </p>
-          <h3>¡A qué esperas para obtener tu descuento!</h3>
-        </div>
-        <div>
-          <button className="btn" onClick={() => navigate('/Login')}>50% dsct</button>
-        </div>
-      </section>
+
+</section >
+<section className='discount'>
+  <div className='discount-text'>
+    <h2>
+        ¿Tienes una planta en apuros, triste y desanimada?
+        </h2>
+      <p> 
+        ¡No te preocupes, amigo! En Matoplantas.com te ofrecemos un descuento especial si nos traes tu planta que parece más un zombie que una belleza verde.
+       
+           No importa si está marchita, despeinada o con una crisis de identidad, aquí la recuperaremos...
+      </p>
+      <h3>
+        ¡A qué esperas para obtener tu descuento!
+      </h3>
+</div>
+<div><button class="btn" onClick={() => navigate('/Login')}>50% de Descuento</button></div>
+
+</section>
     </section>
   );
 };
