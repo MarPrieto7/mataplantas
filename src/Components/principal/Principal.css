@@ -230,6 +230,9 @@
     user-select: none;
     min-width: 182px;
   }
+.botones__cruzada--mobile .button{
+    text-decoration: none;
+}
   
   .button p {
     z-index: 1;

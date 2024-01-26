@@ -1,3 +1,4 @@
+import { decorator } from '@babel/types';
 import React, {useState, useRef, useEffect} from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 
@@ -78,11 +79,15 @@ function Principal() {
           <button className='button' onClick={() => navigate('/Login')}>SOY CULPABLE</button>
         </section>
         <div className="barrVerdeBaja"><a className="textoBarra___medio">...y para que no te vuelva a pasar</a></div>
+        <NavLink to="/Products" style={{ textDecoration: 'none' }}>
         <div className="botones__cruzada--mobile">
-        <NavLink to="/Products"><button className="button" >ABONO <img src="./images/abono.svg" alt="icono abono" /></button></NavLink>
-        <NavLink to="/Products"><button className="button" >SUSTRATO<img src="./images/sustrato.svg" alt="icono abono" /></button></NavLink>
-        <NavLink to="/Products"><button className="button" >RIEGO<img src="./images/riego.svg" alt="icono abono" /></button></NavLink>
+        
+        <button className="button" >ABONO <img src="./images/abono.svg" alt="icono abono" /></button>
+        <button className="button" >SUSTRATO<img src="./images/sustrato.svg" alt="icono abono" /></button>
+        <button className="button" >RIEGO<img src="./images/riego.svg" alt="icono abono" /></button>
+       
         </div>
+        </NavLink>
       </div>
     </div>
   );
