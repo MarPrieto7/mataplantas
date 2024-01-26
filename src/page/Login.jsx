@@ -10,7 +10,7 @@ const Register = () => {
   }
 
   return (
-    <div className="App">
+    <div>
       {
         currentForm === "Logincomponent" ? <Logincomponent onFormSwitch={toggleForm} /> : <Registercomponent onFormSwitch={toggleForm} />
       }

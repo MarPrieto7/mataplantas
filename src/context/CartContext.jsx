@@ -36,7 +36,7 @@ export const CartContextProvider = ({ children }) => {
 
     if (isItemInCart && isItemInCart.quantity === 1) {
       // Eliminar completamente el item del carrito
-      setCartItems(cartItems.filter((item) => item.id !== itemId));
+      setms(cartItems.filter((item) => item.id !== itemId));
     } else {
       // Disminuir la cantidad del item en el carrito
       setCartItems(
